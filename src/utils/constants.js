@@ -141,6 +141,58 @@ export const HOW_IT_WORKS = [
       "Car is brought to the drop-off point by a certified professional. Guest departs smoothly with zero waiting.",
   },
 ];
+// ─── Our Workforce ────────────────────────────────────────────
+export const WORKFORCE = {
+  intro:
+    "A disciplined, presentation-ready team delivering consistent luxury valet experiences — powered by rigorous training and AI-assisted operations.",
+  cards: [
+    {
+      icon: "BadgeCheck",
+      title: "Certified Professionals",
+      description:
+        "All 50+ drivers and attendants hold verified certifications in luxury vehicle handling, guest relations, and operational safety compliance.",
+    },
+    {
+      icon: "Shirt",
+      title: "Weather-Ready Uniforms",
+      description:
+        "Uniforms are designed for all-season comfort and professional appearance, ensuring peak performance in rain, heat, or cold without compromising presentation.",
+    },
+    {
+      icon: "TrendingUp",
+      title: "Continuous Development",
+      description:
+        "Ongoing coaching, performance reviews, and advanced training modules keep our team at the forefront of luxury hospitality and valet excellence.",
+    },
+  ],
+  staffTraining: {
+    title: "Staff Training",
+    description:
+      "Every team member completes our comprehensive in-house training program covering VIP guest handling, curb flow management, emergency response, and luxury vehicle care — ensuring consistent five-star service delivery.",
+  },
+  operationalDiscipline: {
+    title: "Operational Discipline",
+    description:
+      "Our operations are structured around precision scheduling, shift accountability, and real-time AI-assisted team coordination — reducing guest wait times by 15% and overtime costs by 10% through intelligent workforce management.",
+  },
+  stats: [
+    {
+      title: "50+ Trained Professionals",
+      description:
+        "Our team of over 50 dedicated valet professionals is rigorously selected, trained, and certified to deliver seamless luxury service across all environments and peak-demand scenarios.",
+    },
+    {
+      title: "Uniform & Presentation Standards",
+      description:
+        "Every Solo Heights driver wears a professionally designed uniform engineered for comfort and functionality across all weather conditions — maintaining a polished, consistent appearance at all times.",
+    },
+    {
+      title: "Safety & Compliance",
+      description:
+        "We maintain a 99.9% incident-free operational record. All staff undergo rigorous safety compliance training, hazard awareness protocols, and vehicle handling certification before deployment.",
+    },
+  ],
+};
 
 // ─── Stats ────────────────────────────────────────────────────
 export const STATS = [

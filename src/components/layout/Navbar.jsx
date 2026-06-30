@@ -125,8 +125,8 @@ export default function Navbar() {
 }
 
 .navbar__logo-img {
-  width: 42px;
-  height: 42px;
+  width: 58px;
+  height: 58px;
   object-fit: contain;
 }
 

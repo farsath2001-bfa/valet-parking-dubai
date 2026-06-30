@@ -6,6 +6,7 @@ import WhyUs        from '../components/sections/WhyUs'
 import HowItWorks   from '../components/sections/HowItWorks'
 import Stats        from '../components/sections/Stats'
 import Leadership   from '../components/sections/Leadership'
+import Workforce from '../components/sections/Workforce'
 import Gallery      from '../components/sections/Gallery'
 import Clients      from '../components/sections/Clients'
 import Testimonials from '../components/sections/Testimonials'
@@ -24,6 +25,7 @@ export default function Home() {
       <HowItWorks />
       <Stats />
       <Leadership />
+      <Workforce/>
       <Gallery />
       <Clients />
       <Testimonials />

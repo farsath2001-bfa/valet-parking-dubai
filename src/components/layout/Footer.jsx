@@ -161,8 +161,8 @@ export default function Footer() {
 }
 
 .footer__logo-img {
-  width: 52px;
-  height: 52px;
+  width: 70px;
+  height: 70px;
   object-fit: contain;
 }
 

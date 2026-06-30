@@ -4,6 +4,7 @@ import Stats          from '../components/sections/Stats'
 import Leadership     from '../components/sections/Leadership'
 import CTABanner      from '../components/sections/CTABanner'
 import { COMPANY }    from '../utils/constants'
+import Workforce from '../components/sections/Workforce'
 
 const VALUES = [
   { title: 'AI-Powered Operations', desc: 'A fully integrated AI system manages vehicle flow, guest wait times, and real-time parking data.' },
@@ -77,7 +78,7 @@ export default function AboutPage() {
 
       {/* ── Leadership ── */}
       <Leadership />
-
+      <Workforce/>
       <CTABanner />
 
       <style>{`
