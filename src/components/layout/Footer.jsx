@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Phone, Mail, MapPin } from 'lucide-react'
 import { NAV_LINKS, SERVICES, CONTACT_INFO } from '../../utils/constants'
+import logo from '../../assets/logo.png'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -14,15 +15,18 @@ export default function Footer() {
 
           {/* ── Brand Column ── */}
           <div className="footer__brand">
-            <Link to="/" className="footer__logo">
-              <span className="footer__logo-text">VALET</span>
-              <span className="footer__logo-gold">DUBAI</span>
-            </Link>
-            <p className="footer__desc">
-              Dubai's premier RTA-approved valet parking company. Delivering
-              professional, insured, and luxury valet services for hotels,
-              events, malls, and private gatherings across the UAE.
-            </p>
+           <Link to="/" className="footer__logo">
+  <img src={logo} alt="Solo Heights Valet Parking" className="footer__logo-img" />
+  <div className="footer__logo-text-wrap">
+    <span className="footer__logo-text">SOLO HEIGHTS</span>
+    <span className="footer__logo-sub">VALET PARKING</span>
+  </div>
+</Link>
+<p className="footer__desc">
+  A premier luxury valet brand operating under Solo Heights Group,
+  delivering world-class, AI-powered valet parking experiences for
+  elite venues, hotels, and corporate clients across Dubai, UAE.
+</p>
             <div className="footer__socials">
               <a href="#" aria-label="Facebook" className="footer__social">
                 <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
@@ -123,7 +127,7 @@ export default function Footer() {
         {/* ── Bottom Bar ── */}
         <div className="footer__bottom">
           <p className="footer__copy">
-            © {currentYear} Valet Dubai. All rights reserved.
+           © {currentYear} Solo Heights Valet Parking. All rights reserved.
           </p>
           <div className="footer__bottom-links">
             <Link to="#" className="footer__link">Privacy Policy</Link>
@@ -150,18 +154,38 @@ export default function Footer() {
 
         /* ── Brand ── */
         .footer__logo {
-          display: inline-flex;
-          align-items: center;
-          gap: 0.25rem;
-          font-family: var(--font-display);
-          font-size: 1.8rem;
-          font-weight: 700;
-          letter-spacing: 0.08em;
-          margin-bottom: 1.25rem;
-        }
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
 
-        .footer__logo-text { color: var(--color-white); }
-        .footer__logo-gold { color: var(--color-gold); }
+.footer__logo-img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+}
+
+.footer__logo-text-wrap {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.footer__logo-text {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--color-white);
+}
+
+.footer__logo-sub {
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: var(--color-gold);
+}
 
         .footer__desc {
           font-size: var(--fs-sm);

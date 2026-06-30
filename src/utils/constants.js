@@ -13,98 +13,98 @@ export const SERVICES = [
   {
     id: 1,
     icon: "Car",
-    title: "Event Valet Parking",
+    title: "Premium Valet Parking",
     description:
-      "Professional valet solutions for weddings, galas, exhibitions, and corporate events across Dubai.",
+      "White-glove valet parking for hotels, events, and corporate venues. Our trained drivers handle every vehicle with precision, care, and professionalism.",
   },
   {
     id: 2,
-    icon: "Building2",
-    title: "Hotel Valet Parking",
+    icon: "Crown",
+    title: "VIP Guest Handling",
     description:
-      "Seamless 24/7 valet operations for luxury hotels and resorts, enhancing every guest arrival.",
+      "Dedicated VIP arrival and departure protocols ensuring high-profile guests receive discreet, seamless, and personalized service at every touchpoint.",
   },
   {
     id: 3,
-    icon: "ShoppingBag",
-    title: "Mall Valet Parking",
+    icon: "Waves",
+    title: "Curb Flow Management",
     description:
-      "Organized, high-volume valet management for shopping malls and retail destinations.",
+      "AI-powered curb flow systems optimize vehicle queuing, reduce wait times, and ensure a smooth, congestion-free arrival and departure experience for all guests.",
   },
   {
     id: 4,
-    icon: "Heart",
-    title: "Wedding Valet Parking",
+    icon: "Users",
+    title: "Valet Services — Normal & VIP",
     description:
-      "Elegant, customized valet setups with branded podiums and bilingual attendants for your special day.",
+      "Normal valet offers fast curbside greeting, smooth vehicle handover, and efficient parking for everyday guests. VIP valet provides discreet priority handling, dedicated attendants, and quicker retrieval.",
   },
   {
     id: 5,
-    icon: "Briefcase",
-    title: "Corporate Valet Parking",
+    icon: "Zap",
+    title: "AI-Optimized Dispatch",
     description:
-      "Efficient parking solutions for office towers, business parks, and corporate functions.",
+      "Real-time AI dispatch assigns drivers instantly, minimizing vehicle retrieval times and maximizing operational efficiency across all zones.",
   },
   {
     id: 6,
-    icon: "Cross",
-    title: "Hospital Valet Parking",
+    icon: "ShieldCheck",
+    title: "Incident-Free Standards",
     description:
-      "Compassionate and fast valet service for hospitals, clinics, and medical centers.",
+      "Maintaining a 99.9% incident-free record with a 25% reduction in vehicle damage incidents through strict safety protocols and continuous staff training.",
   },
   {
     id: 7,
-    icon: "Plane",
-    title: "Airport Valet Parking",
+    icon: "Building2",
+    title: "Hotel & Corporate Valet",
     description:
-      "Convenient drop-off and retrieval services at Dubai International and Al Maktoum airports.",
+      "Seamless luxury valet experiences for hotels, events, and premium venues — delivered through precision, professionalism, and AI-powered operational excellence.",
   },
   {
-    id: 8,
-    icon: "Waves",
-    title: "Beach Club Valet Parking",
-    description:
-      "Premium valet for beach clubs, resorts, and waterfront venues along the Dubai coastline.",
-  },
+  id: 8,
+  icon: "Shirt",
+  title: "Uniformed Professionals",
+  description:
+    "Our 50-strong team wears premium uniforms tailored for comfort in all weather conditions, projecting a polished and trustworthy brand image.",
+},
 ];
 
 // ─── Why Choose Us ────────────────────────────────────────────
 export const WHY_US = [
   {
-    icon: "BadgeCheck",
-    title: "RTA Licensed & Approved",
+    icon: "Cpu",
+    title: "AI-Driven Operations",
     description:
-      "Fully compliant with Dubai RTA regulations. All attendants hold valid government-issued certifications.",
-  },
-  {
-    icon: "Shield",
-    title: "Fully Insured",
-    description:
-      "Comprehensive liability insurance on every vehicle we handle — zero risk for you.",
-  },
-  {
-    icon: "Clock",
-    title: "24/7 Availability",
-    description:
-      "We operate around the clock, every day of the year including public holidays.",
+      "A fully integrated AI system manages vehicle flow, guest wait times, and real-time parking data — reducing wait times by 15% and cutting operational costs by 10%.",
   },
   {
     icon: "Users",
-    title: "Trained Professionals",
+    title: "Elite Uniformed Team",
     description:
-      "Uniformed, groomed, and highly trained attendants who represent your brand.",
+      "Our 50 trained valet professionals wear premium, weather-appropriate uniforms, ensuring guest-facing presentation matches the luxury environments we serve.",
   },
   {
-    icon: "Smartphone",
-    title: "Real-Time Tracking",
+    icon: "Award",
+    title: "Proven Excellence",
     description:
-      "Digital valet management system tracks every vehicle from drop-off to retrieval.",
+      "A 99.9% incident-free record, 25% reduction in vehicle damage incidents, and consistently elevated guest satisfaction scores define our operational standard.",
   },
   {
-    icon: "Tag",
-    title: "Transparent Pricing",
+    icon: "Radar",
+    title: "Smart Vehicle Tracking",
     description:
-      "Clear, competitive quotes with no hidden fees. You always know what you're paying for.",
+      "Real-time AI monitoring of every vehicle from arrival to retrieval, eliminating errors and ensuring complete accountability at every touchpoint.",
+  },
+  {
+    icon: "GraduationCap",
+    title: "Elite Trained Team",
+    description:
+      "Our 50 uniformed valet professionals are rigorously trained in VIP guest handling, safety compliance, and luxury service standards across all weather conditions.",
+  },
+  {
+    icon: "TrendingDown",
+    title: "Budget & Cost Efficiency",
+    description:
+      "We achieved a 10% reduction in overtime costs and a 5% decrease in overall operational expenses — delivering premium service with exceptional financial discipline.",
   },
 ];
 
@@ -118,109 +118,109 @@ export const HOW_IT_WORKS = [
   },
   {
     step: "02",
-    title: "Check-In",
+    title: "Digital Check-In",
     description:
-      "Vehicle is inspected, a claim ticket is issued, and keys are securely tagged and stored.",
+      "Vehicle is logged through our zero-paper AI system — fully digital ticketing with no manual errors.",
   },
   {
     step: "03",
-    title: "Parking",
+    title: "AI Dispatch & Parking",
     description:
-      "Attendant drives the vehicle to a secured parking area and logs all details digitally.",
+      "Our AI dispatch engine assigns the nearest available driver in real time, optimizing routing and reducing wait times.",
   },
   {
     step: "04",
-    title: "Retrieval Request",
+    title: "Live Retrieval Request",
     description:
-      "Guest presents their ticket or sends a message — car is retrieved immediately.",
+      "Guest requests retrieval — live status updates and estimated retrieval times are sent instantly via our digital platform.",
   },
   {
     step: "05",
     title: "Vehicle Return",
     description:
-      "Car is brought to the drop-off point. Guest departs smoothly with zero waiting.",
+      "Car is brought to the drop-off point by a certified professional. Guest departs smoothly with zero waiting.",
   },
 ];
 
 // ─── Stats ────────────────────────────────────────────────────
 export const STATS = [
-  { value: 3000, suffix: "+", label: "Vehicles Serviced" },
-  { value: 1500, suffix: "+", label: "Happy Clients" },
-  { value: 10, suffix: "+", label: "Years Experience" },
-  { value: 100, suffix: "%", label: "Customer Satisfaction" },
+  { value: 50, suffix: "+", label: "Trained Professionals" },
+  { value: 99, suffix: ".9%", label: "Incident-Free Record" },
+  { value: 15, suffix: "%", label: "Faster Wait Times" },
+  { value: 25, suffix: "%", label: "Fewer Damage Incidents" },
 ];
 
 // ─── Testimonials ─────────────────────────────────────────────
 export const TESTIMONIALS = [
   {
-    name: "Ahmed",
-    role: "Hotel GM —  Dubai",
+    name: "Ahmed Al Mansoori",
+    role: "Hotel GM — Downtown Dubai",
     review:
-      "Outstanding service from start to finish. Their team cleared our weekend queue within minutes and guests kept complimenting the valet experience.",
+      "Outstanding service from start to finish. Their AI dispatch system cleared our weekend queue within minutes and guests kept complimenting the valet experience.",
   },
   {
-    name: "Sandra",
-    role: "Wedding & Events Planner — Jumeirah",
+    name: "Sarah Thompson",
+    role: "Wedding & Events Planner — Palm Jumeirah",
     review:
-      "We booked them for a 300-guest wedding. They mapped VIP lanes, set up custom signage, and handled every retrieval flawlessly. Truly professional.",
+      "We booked Solo Heights for a 300-guest wedding. Their uniformed team handled every retrieval flawlessly and the VIP guest handling was truly professional.",
   },
   {
-    name: "Abdullah",
+    name: "Khalid Rashid",
     role: "Facilities Manager — Business Bay",
     review:
-      "Our peak-hour bottleneck disappeared overnight. Marshals managed lanes perfectly and the shift supervisor kept us updated throughout.",
+      "Our peak-hour bottleneck disappeared overnight. The curb flow management system and real-time AI coordination made everything seamless.",
   },
   {
-    name: "Hussain",
+    name: "Lisa Chen",
     role: "Restaurant Owner — DIFC",
     review:
-      "Our guests always comment on how smooth the arrival experience is. Worth every dirham — best investment we made for the restaurant.",
+      "Our guests always comment on how smooth the arrival experience is. The 99.9% incident-free record gives us total peace of mind.",
   },
 ];
 
 // ─── FAQ ──────────────────────────────────────────────────────
 export const FAQS = [
   {
-    question: "What is valet parking in Dubai?",
+    question: "What is Solo Heights Valet Parking?",
     answer:
-      "Valet parking is a premium service where trained attendants park your vehicle on your behalf and return it when you're ready to leave.",
+      "Solo Heights Valet Parking is a premier luxury valet brand operating under Solo Heights Group, delivering world-class parking experiences for elite venues, hotels, and corporate clients in Dubai.",
   },
   {
-    question: "Are you RTA licensed and approved?",
+    question: "How does your AI-powered system work?",
     answer:
-      "Yes. We are fully licensed and RTA-approved. All our attendants hold valid UAE government-issued certifications.",
+      "Our fully integrated AI system manages vehicle flow, guest wait times, dispatch, and real-time parking data — reducing wait times by 15% and cutting operational costs by 10%.",
   },
   {
-    question: "How much does valet parking cost in Dubai?",
+    question: "How large is your team?",
     answer:
-      "Pricing starts from 20 AED per visit for standard service. Event and VIP packages vary based on guest volume, hours, and location. Contact us for a free quote.",
+      "We have a dedicated team of 50+ uniformed, certified valet professionals trained to the highest hospitality standards, with branded black & gold attire designed for Dubai's weather.",
+  },
+  {
+    question: "What is your safety record?",
+    answer:
+      "We maintain a 99.9% incident-free operational record, with a 25% reduction in vehicle damage incidents through strict safety compliance protocols and continuous staff training.",
+  },
+  {
+    question: "Do you offer VIP valet services?",
+    answer:
+      "Yes. Our VIP valet service provides discreet priority handling, dedicated attendants, quicker retrieval, and personalized service for high-profile arrivals.",
   },
   {
     question: "Which areas in Dubai do you cover?",
     answer:
-      "We cover all major Dubai areas including Downtown, Marina, DIFC, Business Bay, Palm Jumeirah, JBR, Deira, Bur Dubai, Al Barsha, and more.",
-  },
-  {
-    question: "Do you provide valet for weddings?",
-    answer:
-      "Absolutely. We offer fully customized wedding valet setups including branded podiums, bilingual staff, and dedicated coordinators.",
-  },
-  {
-    question: "Can you handle large corporate events?",
-    answer:
-      "Yes. We conduct pre-event site assessments and build detailed traffic and parking management plans regardless of guest volume.",
+      "We are based in Business Bay, Al Manara Tower, Dubai, and serve hotels, events, and premium venues across the city.",
   },
 ];
 
 // ─── Contact Info ─────────────────────────────────────────────
 export const CONTACT_INFO = {
-  phone: "+971 56 111 9233",
-  whatsapp: "971561119233",
-  email: "info@myvaletparking.ae",
-  address: "Al Muteena,Deira,Dubai, UAE",
+  phone: "+971 56 836 7272",
+  whatsapp: "971568367272",
+  email: "info@soloheights-valet.ae",
+  address: "Business Bay, Al Manara Tower, 3207, Dubai, UAE",
 };
 
-// ─── Client Logos (use image filenames in /assets/images/) ────
+// ─── Client Logos ─────────────────────────────────────────────
 export const CLIENTS = [
   { name: "Burj Al Arab", logo: "burj-al-arab.png" },
   { name: "Atlantis The Palm", logo: "atlantis.png" },
@@ -229,3 +229,44 @@ export const CLIENTS = [
   { name: "Armani Hotel", logo: "armani.png" },
   { name: "Emirates Airlines", logo: "emirates.png" },
 ];
+
+// ─── Leadership ───────────────────────────────────────────────
+export const LEADERSHIP = {
+  name: "Haitham Zara",
+  role: "General Manager — Solo Heights Valet Parking",
+  bio: "Haitham Zara brings over a decade of elite hospitality leadership, driving operational excellence, team performance, and unmatched guest satisfaction across luxury environments. 18+ years of luxury hospitality leadership.",
+  highlights: [
+    {
+      title: "Operational Excellence",
+      description:
+        "Reduced guest wait times by 15% and vehicle damage incidents by 25% through AI-driven systems and rigorous staff training protocols.",
+    },
+    {
+      title: "Financial Leadership",
+      description:
+        "Managed annual budgets exceeding $500,000, achieving a 5% reduction in operational expenses and 10% reduction in overtime costs.",
+    },
+    {
+      title: "Safety & Compliance",
+      description:
+        "Maintained a 99.9% incident-free operational record while leading teams of 50+ staff across luxury hotel and large-scale valet environments.",
+    },
+  ],
+};
+
+// ─── Company Info ─────────────────────────────────────────────
+export const COMPANY = {
+  name: "Solo Heights Valet Parking",
+  group: "Solo Heights Group",
+  tagline: "Excellence in Every Drive",
+  mission:
+    "To redefine luxury valet parking by combining impeccable hospitality, AI-powered operational intelligence, and a team of elite professionals who treat every guest and vehicle with the utmost care and discretion.",
+  vision:
+    "To be the most trusted and technologically advanced valet parking company in the region, setting the gold standard for guest experience, operational efficiency, and service excellence.",
+  identity:
+    "Solo Heights Valet Parking is a premier luxury valet brand operating under Solo Heights Group, delivering world-class parking experiences for elite venues, hotels, and corporate clients.",
+  people:
+    "Our team of 50 dedicated, uniformed professionals is trained to the highest hospitality standards, wearing smart, weather-appropriate uniforms that reflect our brand's elegance and care for staff comfort.",
+  commitment:
+    "We uphold a 99.9% incident-free record and maintain strict safety compliance protocols, ensuring every vehicle and guest interaction is handled with precision and respect.",
+};

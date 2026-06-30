@@ -4,13 +4,12 @@ import SectionHeading from '../ui/SectionHeading'
 import { CONTACT_INFO } from '../../utils/constants'
 
 const SERVICE_OPTIONS = [
+  'Premium Valet Parking',
+  'VIP Guest Handling',
+  'Hotel & Corporate Valet',
   'Event Valet Parking',
-  'Hotel Valet Parking',
+  'Curb Flow Management',
   'Wedding Valet Parking',
-  'Mall Valet Parking',
-  'Corporate Valet Parking',
-  'Hospital Valet Parking',
-  'Airport Valet Parking',
   'Other',
 ]
 
@@ -26,8 +25,8 @@ export default function QuoteForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const msg = `Hello! I'd like a quote.%0AName: ${form.name}%0APhone: ${form.phone}%0AService: ${form.service}%0AMessage: ${form.message}`
-    window.open(`https://wa.me/${CONTACT_INFO.whatsapp}?text=${msg}`, '_blank')
+    const msg = 'Hello Solo Heights Valet Parking! I would like a quote.%0AName: ' + form.name + '%0APhone: ' + form.phone + '%0AService: ' + form.service + '%0AMessage: ' + form.message
+    window.open('https://wa.me/' + CONTACT_INFO.whatsapp + '?text=' + msg, '_blank')
     setSubmitted(true)
   }
 
@@ -35,24 +34,23 @@ export default function QuoteForm() {
     <section className="section section--darker quoteform">
       <div className="container quoteform__inner">
 
-        {/* ── Left ── */}
         <div className="quoteform__info">
           <SectionHeading
             eyebrow="Get A Quote"
             title="Book Your Valet Service Today"
-            subtitle="Fill in the form and we'll get back to you within minutes via WhatsApp with a custom quote."
+            subtitle="Fill in the form and our team will respond within minutes via WhatsApp with a custom quote tailored to your venue."
           />
 
           <div className="quoteform__contact-items">
             <div className="quoteform__contact-item">
               <span className="quoteform__contact-label">Phone</span>
-              <a href={`tel:${CONTACT_INFO.phone}`} className="quoteform__contact-value">
+              <a href={'tel:' + CONTACT_INFO.phone} className="quoteform__contact-value">
                 {CONTACT_INFO.phone}
               </a>
             </div>
             <div className="quoteform__contact-item">
               <span className="quoteform__contact-label">Email</span>
-              <a href={`mailto:${CONTACT_INFO.email}`} className="quoteform__contact-value">
+              <a href={'mailto:' + CONTACT_INFO.email} className="quoteform__contact-value">
                 {CONTACT_INFO.email}
               </a>
             </div>
@@ -63,12 +61,11 @@ export default function QuoteForm() {
           </div>
         </div>
 
-        {/* ── Form ── */}
         <div className="quoteform__form-wrap">
           {submitted ? (
             <div className="quoteform__success">
               <h3>Thank You! 🎉</h3>
-              <p>Your request has been sent via WhatsApp. We'll respond within minutes.</p>
+              <p>Your request has been sent via WhatsApp. Our team will respond within minutes.</p>
               <button
                 className="btn btn--outline"
                 onClick={() => setSubmitted(false)}
@@ -138,7 +135,7 @@ export default function QuoteForm() {
                 <textarea
                   name="message"
                   rows={4}
-                  placeholder="Tell us about your event, venue, guest count, date..."
+                  placeholder="Tell us about your venue, guest count, event date..."
                   className="quoteform__input quoteform__textarea"
                   value={form.message}
                   onChange={handleChange}
@@ -162,7 +159,6 @@ export default function QuoteForm() {
           align-items: start;
         }
 
-        /* ── Contact Info ── */
         .quoteform__contact-items {
           display: flex;
           flex-direction: column;
@@ -188,7 +184,6 @@ export default function QuoteForm() {
           color: var(--color-gray-light);
         }
 
-        /* ── Form ── */
         .quoteform__form-wrap {
           background: var(--color-bg);
           border: 1px solid var(--color-border);
@@ -263,7 +258,6 @@ export default function QuoteForm() {
           justify-content: center;
         }
 
-        /* ── Success ── */
         .quoteform__success {
           text-align: center;
           padding: 3rem 1rem;
@@ -296,7 +290,6 @@ export default function QuoteForm() {
           .quoteform__row {
             grid-template-columns: 1fr;
           }
-
           .quoteform__form-wrap {
             padding: 1.5rem;
           }

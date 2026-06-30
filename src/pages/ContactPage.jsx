@@ -7,13 +7,13 @@ const CONTACT_CARDS = [
     icon: Phone,
     label: 'Phone',
     value: CONTACT_INFO.phone,
-    href: `tel:${CONTACT_INFO.phone}`,
+    href: 'tel:' + CONTACT_INFO.phone,
   },
   {
     icon: Mail,
     label: 'Email',
     value: CONTACT_INFO.email,
-    href: `mailto:${CONTACT_INFO.email}`,
+    href: 'mailto:' + CONTACT_INFO.email,
   },
   {
     icon: MapPin,
@@ -39,8 +39,8 @@ export default function ContactPage() {
           <div className="gold-line" />
           <h1 className="page-hero__title">Get In Touch</h1>
           <p className="page-hero__subtitle">
-            Ready to book or have a question? Our team is available 24/7 to
-            assist you with any valet parking requirement.
+            Ready to book or have a question? Our team at Solo Heights Valet
+            Parking is available 24/7 to assist you with any valet requirement.
           </p>
         </div>
       </section>
@@ -70,8 +70,8 @@ export default function ContactPage() {
         <div className="container">
           <div className="contact-map__embed">
             <iframe
-              title="Valet Dubai Location"
-              src="https://maps.google.com/maps?q=Emaar+Business+Park+Sheikh+Zayed+Road+Dubai&t=m&z=14&output=embed&iwloc=near"
+              title="Solo Heights Valet Parking Location"
+              src="https://maps.google.com/maps?q=Al+Manara+Tower+Business+Bay+Dubai&t=m&z=15&output=embed&iwloc=near"
               width="100%"
               height="400"
               style={{ border: 0, borderRadius: '8px' }}
@@ -102,7 +102,6 @@ export default function ContactPage() {
           line-height: 1.8;
         }
 
-        /* ── Cards ── */
         .contact-cards {
           display: grid;
           grid-template-columns: repeat(4, 1fr);
@@ -152,7 +151,6 @@ export default function ContactPage() {
           line-height: 1.6;
         }
 
-        /* ── Map ── */
         .contact-map__embed {
           border: 1px solid var(--color-border);
           border-radius: var(--radius-md);

@@ -1,15 +1,15 @@
 import { CheckCircle } from 'lucide-react'
 import SectionHeading from '../ui/SectionHeading'
 import Button from '../ui/Button'
-import { CONTACT_INFO } from '../../utils/constants'
+import { CONTACT_INFO, COMPANY } from '../../utils/constants'
 
 const HIGHLIGHTS = [
-  'RTA Licensed & fully government compliant',
-  'Uniformed, groomed, and trained attendants',
-  'Real-time digital vehicle tracking system',
-  'Custom-branded podiums and signage',
-  'Serving 150+ clients across Dubai & UAE',
-  'Available for events of any size',
+  'Fully integrated AI system for real-time operations',
+  '50+ uniformed, certified valet professionals',
+  '99.9% incident-free operational record',
+  'Branded black & gold attire for Dubai weather',
+  '15% faster wait times through AI dispatch',
+  'Based in Business Bay, Al Manara Tower, Dubai',
 ]
 
 export default function About() {
@@ -17,26 +17,26 @@ export default function About() {
     <section className="section section--darker about">
       <div className="container about__inner">
 
-        {/* ── Image Side ── */}
         <div className="about__image-wrap">
           <div className="about__image-box">
             <div className="about__image-placeholder">
-              <span>Your Photo Here</span>
+              <span>Team Photo</span>
             </div>
           </div>
           <div className="about__badge">
-            <span className="about__badge-number">10+</span>
-            <span className="about__badge-text">Years of Excellence</span>
+            <span className="about__badge-number">50+</span>
+            <span className="about__badge-text">Trained Professionals</span>
           </div>
         </div>
 
-        {/* ── Content Side ── */}
         <div className="about__content">
           <SectionHeading
             eyebrow="About Us"
-            title="Dubai's Most Trusted Valet Partner"
-            subtitle="We don't simply park cars. We enhance the complete arrival and departure experience for your guests — making every interaction a reflection of your brand's excellence."
+            title="Excellence in Every Drive"
+            subtitle={COMPANY.identity}
           />
+
+          <p className="about__mission">{COMPANY.mission}</p>
 
           <ul className="about__highlights">
             {HIGHLIGHTS.map((item, i) => (
@@ -49,7 +49,7 @@ export default function About() {
 
           <div className="about__ctas">
             <Button to="/about" variant="primary">Learn More About Us</Button>
-            <Button href={`tel:${CONTACT_INFO.phone}`} variant="outline">
+            <Button href={'tel:' + CONTACT_INFO.phone} variant="outline">
               Call Us Now
             </Button>
           </div>
@@ -64,7 +64,6 @@ export default function About() {
           align-items: center;
         }
 
-        /* ── Image ── */
         .about__image-wrap {
           position: relative;
         }
@@ -116,7 +115,15 @@ export default function About() {
           white-space: nowrap;
         }
 
-        /* ── Content ── */
+        .about__mission {
+          font-size: var(--fs-sm);
+          color: var(--color-gray-light);
+          line-height: 1.9;
+          margin-bottom: 1.75rem;
+          padding-left: 1rem;
+          border-left: 2px solid var(--color-gold);
+        }
+
         .about__highlights {
           display: flex;
           flex-direction: column;
@@ -148,7 +155,6 @@ export default function About() {
             grid-template-columns: 1fr;
             gap: 3rem;
           }
-
           .about__badge {
             bottom: 1rem;
             right: 1rem;

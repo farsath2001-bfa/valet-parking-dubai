@@ -5,29 +5,29 @@ import { CONTACT_INFO } from '../../utils/constants'
 const SLIDES = [
   {
     id: 1,
-    eyebrow: 'RTA Licensed & Approved',
-    title: 'Premium Valet',
-    titleGold: 'Parking Dubai',
+    eyebrow: 'Excellence in Every Drive',
+    title: 'AI-Powered Valet',
+    titleGold: '& Hospitality',
     subtitle:
-      'Dubai\'s most trusted valet parking company. Professional, insured, and available 24/7 for hotels, events, weddings, and corporate venues.',
+      'Solo Heights Valet Parking delivers world-class valet experiences through precision, professionalism, and fully integrated AI-powered operational excellence.',
     bg: 'linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #0a0a0a 100%)',
   },
   {
     id: 2,
-    eyebrow: 'Events & Weddings',
-    title: 'Elegant Service',
-    titleGold: 'Every Arrival',
+    eyebrow: 'Premium Valet Services',
+    title: 'Seamless Luxury',
+    titleGold: 'For Every Venue',
     subtitle:
-      'From intimate gatherings to 500-guest weddings — our uniformed attendants deliver a flawless first impression every single time.',
+      'From hotels to events to premium venues — our 50+ trained professionals deliver white-glove valet parking with unmatched care.',
     bg: 'linear-gradient(135deg, #0d0d0d 0%, #1a0a00 50%, #0d0d0d 100%)',
   },
   {
     id: 3,
-    eyebrow: 'Hotels & Restaurants',
-    title: 'Luxury Valet',
-    titleGold: 'Management',
+    eyebrow: 'AI-Driven Operations',
+    title: 'Smart Technology',
+    titleGold: 'Flawless Service',
     subtitle:
-      'Trusted by Dubai\'s finest hotels, restaurants, and shopping malls. We enhance your brand through every guest interaction.',
+      'Our fully integrated AI system reduces wait times by 15%, cuts operational costs by 10%, and maintains a 99.9% incident-free record.',
     bg: 'linear-gradient(135deg, #080808 0%, #0a1628 50%, #080808 100%)',
   },
 ]
@@ -36,7 +36,6 @@ export default function Hero() {
   const [current, setCurrent] = useState(0)
   const [animating, setAnimating] = useState(false)
 
-  // ── Auto slide ─────────────────────────────────────────
   useEffect(() => {
     const timer = setInterval(() => {
       goNext()
@@ -62,11 +61,8 @@ export default function Hero() {
 
   return (
     <section className="hero" style={{ background: slide.bg }}>
-
-      {/* ── Animated Background Pattern ── */}
       <div className="hero__pattern" />
 
-      {/* ── Content ── */}
       <div className={`container hero__content ${animating ? 'hero__content--fade' : ''}`}>
 
         <span className="eyebrow hero__eyebrow">{slide.eyebrow}</span>
@@ -80,17 +76,15 @@ export default function Hero() {
 
         <p className="hero__subtitle">{slide.subtitle}</p>
 
-        {/* ── Trust Badges ── */}
         <div className="hero__badges">
-          {['RTA Approved', 'Fully Insured', '24/7 Service', '10+ Years'].map((badge) => (
+          {['AI-Powered Operations', '50+ Professionals', '99.9% Incident-Free', 'Business Bay, Dubai'].map((badge) => (
             <span key={badge} className="hero__badge">{badge}</span>
           ))}
         </div>
 
-        {/* ── CTAs ── */}
         <div className="hero__ctas">
           
-           <a href={`https://wa.me/${CONTACT_INFO.whatsapp}`}
+           <a href={'https://wa.me/' + CONTACT_INFO.whatsapp}
             target="_blank"
             rel="noreferrer"
             className="btn btn--primary"
@@ -98,7 +92,7 @@ export default function Hero() {
             Get Free Quote
           </a>
           
-           <a href={`tel:${CONTACT_INFO.phone}`}
+            <a href={'tel:' + CONTACT_INFO.phone}
             className="btn btn--outline"
           >
             <Phone size={16} />
@@ -107,7 +101,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* ── Slide Controls ── */}
       <button className="hero__arrow hero__arrow--prev" onClick={goPrev}>
         <ChevronLeft size={24} />
       </button>
@@ -115,7 +108,6 @@ export default function Hero() {
         <ChevronRight size={24} />
       </button>
 
-      {/* ── Dots ── */}
       <div className="hero__dots">
         {SLIDES.map((_, i) => (
           <button
@@ -126,7 +118,6 @@ export default function Hero() {
         ))}
       </div>
 
-      {/* ── Scroll Indicator ── */}
       <div className="hero__scroll">
         <span>Scroll</span>
         <div className="hero__scroll-line" />
@@ -142,7 +133,6 @@ export default function Hero() {
           transition: background 1s ease;
         }
 
-        /* ── Pattern ── */
         .hero__pattern {
           position: absolute;
           inset: 0;
@@ -157,7 +147,6 @@ export default function Hero() {
           pointer-events: none;
         }
 
-        /* ── Content ── */
         .hero__content {
           position: relative;
           z-index: 2;
@@ -199,7 +188,6 @@ export default function Hero() {
           max-width: 580px;
         }
 
-        /* ── Badges ── */
         .hero__badges {
           display: flex;
           flex-wrap: wrap;
@@ -219,14 +207,12 @@ export default function Hero() {
           background: rgba(200, 168, 101, 0.06);
         }
 
-        /* ── CTAs ── */
         .hero__ctas {
           display: flex;
           flex-wrap: wrap;
           gap: 1rem;
         }
 
-        /* ── Arrows ── */
         .hero__arrow {
           position: absolute;
           top: 50%;
@@ -255,7 +241,6 @@ export default function Hero() {
         .hero__arrow--prev { left: 2rem; }
         .hero__arrow--next { right: 2rem; }
 
-        /* ── Dots ── */
         .hero__dots {
           position: absolute;
           bottom: 3rem;
@@ -282,7 +267,6 @@ export default function Hero() {
           border-radius: 4px;
         }
 
-        /* ── Scroll Indicator ── */
         .hero__scroll {
           position: absolute;
           right: 2.5rem;
@@ -314,14 +298,9 @@ export default function Hero() {
           50%       { opacity: 1; }
         }
 
-        /* ── Responsive ── */
         @media (max-width: 768px) {
-          .hero__content {
-            padding-top: 7rem;
-          }
-
+          .hero__content { padding-top: 7rem; }
           .hero__arrow { display: none; }
-
           .hero__scroll { display: none; }
         }
       `}</style>

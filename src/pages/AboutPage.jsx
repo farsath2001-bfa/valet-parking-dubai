@@ -1,20 +1,15 @@
 import { CheckCircle } from 'lucide-react'
 import SectionHeading from '../components/ui/SectionHeading'
 import Stats          from '../components/sections/Stats'
+import Leadership     from '../components/sections/Leadership'
 import CTABanner      from '../components/sections/CTABanner'
+import { COMPANY }    from '../utils/constants'
 
 const VALUES = [
-  { title: 'Professionalism', desc: 'Every attendant is uniformed, trained, and held to the highest hospitality standards.' },
-  { title: 'Trust',           desc: 'We are fully licensed, RTA-approved, and comprehensively insured on every operation.' },
-  { title: 'Excellence',      desc: 'We go beyond parking — we deliver an experience that reflects your brand.' },
-  { title: 'Reliability',     desc: '24/7 availability, 365 days a year. We are always ready when you need us.' },
-]
-
-const TEAM = [
-  { name: 'Lesaa', role: 'General Manager' },
-  { name: 'Nick',     role: 'Operations Director' },
-  { name: 'Willson',   role: 'Client Relations Manager' },
-  { name: 'Ibrahim',       role: 'Head of Training' },
+  { title: 'AI-Powered Operations', desc: 'A fully integrated AI system manages vehicle flow, guest wait times, and real-time parking data.' },
+  { title: 'Elite Uniformed Team',  desc: 'Our 50 trained valet professionals wear premium, weather-appropriate uniforms reflecting Dubai\'s luxury standard.' },
+  { title: 'Proven Excellence',     desc: 'A 99.9% incident-free record and consistently elevated guest satisfaction scores define our operational standard.' },
+  { title: 'Continuous Development',desc: 'Ongoing coaching, performance reviews, and advanced training keep our team at the forefront of valet excellence.' },
 ]
 
 export default function AboutPage() {
@@ -25,37 +20,28 @@ export default function AboutPage() {
         <div className="container page-hero__inner">
           <span className="eyebrow">About Us</span>
           <div className="gold-line" />
-          <h1 className="page-hero__title">Dubai's Premier Valet Company</h1>
-          <p className="page-hero__subtitle">
-            Over a decade of delivering premium valet experiences across the UAE's
-            most prestigious venues, hotels, and events.
-          </p>
+          <h1 className="page-hero__title">{COMPANY.tagline}</h1>
+          <p className="page-hero__subtitle">{COMPANY.identity}</p>
         </div>
       </section>
 
-      {/* ── Story ── */}
+      {/* ── Identity / Mission / Vision ── */}
       <section className="section section--darker">
         <div className="container about-story">
           <div className="about-story__content">
             <SectionHeading
-              eyebrow="Our Story"
-              title="Built on Trust & Excellence"
-              subtitle="Founded in Dubai with a single mission — to redefine the parking experience through hospitality, professionalism, and precision."
+              eyebrow="Our Mission"
+              title="Built on Trust & Innovation"
+              subtitle={COMPANY.mission}
             />
-            <p className="about-story__text">
-              What began as a small team of dedicated parking professionals has grown
-              into one of Dubai's most trusted valet management companies. With over
-              10 years of experience serving luxury hotels, world-class events, and
-              premier retail destinations, we have built our reputation on one
-              foundation: treating every guest, every vehicle, and every venue with
-              the highest possible standard of care.
-            </p>
-            <p className="about-story__text">
-              Today we serve 150+ clients across Dubai, Abu Dhabi, and Sharjah —
-              from intimate private dinners to large-scale government events. Our
-              RTA-licensed team of trained, uniformed professionals handles every
-              operation with precision, discretion, and pride.
-            </p>
+            <h3 className="about-story__subhead">Our Vision</h3>
+            <p className="about-story__text">{COMPANY.vision}</p>
+
+            <h3 className="about-story__subhead">Our People</h3>
+            <p className="about-story__text">{COMPANY.people}</p>
+
+            <h3 className="about-story__subhead">Our Commitment</h3>
+            <p className="about-story__text">{COMPANY.commitment}</p>
           </div>
 
           <div className="about-story__image">
@@ -70,7 +56,7 @@ export default function AboutPage() {
       <section className="section section--dark">
         <div className="container">
           <SectionHeading
-            eyebrow="Our Values"
+            eyebrow="Why Choose Us"
             title="What We Stand For"
             center
           />
@@ -89,41 +75,19 @@ export default function AboutPage() {
       {/* ── Stats ── */}
       <Stats />
 
-      {/* ── Team ── */}
-      <section className="section section--darker">
-        <div className="container">
-          <SectionHeading
-            eyebrow="Our Team"
-            title="The People Behind the Service"
-            center
-          />
-          <div className="about-team">
-            {TEAM.map((member, i) => (
-              <div key={i} className="about-team__card">
-                <div className="about-team__avatar">
-                  {member.name.charAt(0)}
-                </div>
-                <h3 className="about-team__name">{member.name}</h3>
-                <p className="about-team__role">{member.role}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* ── Leadership ── */}
+      <Leadership />
 
       <CTABanner />
 
       <style>{`
-        /* ── Page Hero ── */
         .page-hero {
           background: var(--color-bg-2);
           padding: 10rem 0 5rem;
           border-bottom: 1px solid var(--color-border);
         }
 
-        .page-hero__inner {
-          max-width: 700px;
-        }
+        .page-hero__inner { max-width: 700px; }
 
         .page-hero__title {
           font-family: var(--font-display);
@@ -140,12 +104,19 @@ export default function AboutPage() {
           line-height: 1.8;
         }
 
-        /* ── Story ── */
         .about-story {
           display: grid;
           grid-template-columns: 1.2fr 1fr;
           gap: 5rem;
-          align-items: center;
+          align-items: start;
+        }
+
+        .about-story__subhead {
+          font-family: var(--font-display);
+          font-size: 1.2rem;
+          color: var(--color-gold);
+          margin-top: 1.5rem;
+          margin-bottom: 0.5rem;
         }
 
         .about-story__text {
@@ -166,9 +137,10 @@ export default function AboutPage() {
           color: var(--color-gray);
           font-size: var(--fs-sm);
           min-height: 400px;
+          position: sticky;
+          top: 100px;
         }
 
-        /* ── Values ── */
         .about-values {
           display: grid;
           grid-template-columns: repeat(4, 1fr);
@@ -207,76 +179,17 @@ export default function AboutPage() {
           line-height: 1.7;
         }
 
-        /* ── Team ── */
-        .about-team {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          gap: 1.5rem;
-        }
-
-        .about-team__card {
-          background: var(--color-bg-2);
-          border: 1px solid var(--color-border);
-          border-radius: var(--radius-md);
-          padding: 2rem;
-          text-align: center;
-          transition: var(--transition);
-        }
-
-        .about-team__card:hover {
-          border-color: var(--color-gold);
-          transform: translateY(-4px);
-        }
-
-        .about-team__avatar {
-          width: 70px;
-          height: 70px;
-          border-radius: 50%;
-          background: var(--color-gold);
-          color: #000;
-          font-family: var(--font-display);
-          font-size: 2rem;
-          font-weight: 700;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin: 0 auto 1rem;
-        }
-
-        .about-team__name {
-          font-family: var(--font-display);
-          font-size: 1.1rem;
-          color: var(--color-white);
-          margin-bottom: 0.35rem;
-        }
-
-        .about-team__role {
-          font-size: var(--fs-xs);
-          color: var(--color-gold);
-          letter-spacing: 0.08em;
-          text-transform: uppercase;
-        }
-
-        /* ── Responsive ── */
         @media (max-width: 1024px) {
-          .about-values,
-          .about-team {
-            grid-template-columns: repeat(2, 1fr);
-          }
+          .about-values { grid-template-columns: repeat(2, 1fr); }
         }
 
         @media (max-width: 768px) {
-          .about-story {
-            grid-template-columns: 1fr;
-            gap: 2rem;
-          }
+          .about-story { grid-template-columns: 1fr; gap: 2rem; }
+          .about-story__image-placeholder { position: static; }
         }
 
         @media (max-width: 560px) {
-          .about-values,
-          .about-team {
-            grid-template-columns: 1fr;
-          }
+          .about-values { grid-template-columns: 1fr; }
         }
       `}</style>
     </>

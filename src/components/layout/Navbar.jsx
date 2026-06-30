@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { Menu, X, Phone } from 'lucide-react'
 import { NAV_LINKS, CONTACT_INFO } from '../../utils/constants'
+import logo from '../../assets/logo.png'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -23,12 +24,14 @@ export default function Navbar() {
     <header className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
       <div className="container navbar__inner">
 
-        {/* ── Logo ── */}
-        <Link to="/" className="navbar__logo" onClick={closeMenu}>
-        <span className="navbar__logo-gold">MY</span>
-          <span className="navbar__logo-text">VALET</span>
-          <span className="navbar__logo-gold">DUBAI</span>
-        </Link>
+       {/* ── Logo ── */}
+<Link to="/" className="navbar__logo" onClick={closeMenu}>
+  <img src={logo} alt="Solo Heights Valet Parking" className="navbar__logo-img" />
+  <div className="navbar__logo-text-wrap">
+    <span className="navbar__logo-text">SOLO HEIGHTS</span>
+    <span className="navbar__logo-sub">VALET PARKING</span>
+  </div>
+</Link>
 
         {/* ── Desktop Nav ── */}
         <nav className="navbar__links">
@@ -115,24 +118,40 @@ export default function Navbar() {
           gap: 2rem;
         }
 
-        /* ── Logo ── */
-        .navbar__logo {
-          display: flex;
-          align-items: center;
-          gap: 0.25rem;
-          font-family: var(--font-display);
-          font-size: 1.6rem;
-          font-weight: 700;
-          letter-spacing: 0.08em;
-        }
+       .navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
 
-        .navbar__logo-text {
-          color: var(--color-white);
-        }
+.navbar__logo-img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
 
-        .navbar__logo-gold {
-          color: var(--color-gold);
-        }
+.navbar__logo-text-wrap {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.navbar__logo-text {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--color-white);
+}
+
+.navbar__logo-sub {
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: var(--color-gold);
+}
+
+        
 
         /* ── Desktop Links ── */
         .navbar__links {

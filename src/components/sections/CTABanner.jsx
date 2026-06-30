@@ -9,13 +9,14 @@ export default function CTABanner() {
     <section className="ctabanner">
       <div className="container ctabanner__inner">
         <div className="ctabanner__content">
-          <span className="eyebrow">Limited Time Offer</span>
+          <span className="eyebrow">Excellence in Every Drive</span>
           <h2 className="ctabanner__title">
-            Get <span className="text-gold">50% OFF</span> Your First Booking
+            Experience <span className="text-gold">AI-Powered</span> Luxury Valet
           </h2>
           <p className="ctabanner__subtitle">
-            Book our professional valet parking service today and receive an
-            exclusive discount. Trusted by 150+ clients across Dubai.
+            Trusted by elite venues and corporate clients across Dubai. Book
+            Solo Heights Valet Parking today and discover white-glove service
+            backed by a 99.9% incident-free record.
           </p>
         </div>
 
@@ -29,7 +30,7 @@ export default function CTABanner() {
             Get Free Quote
           </a>
           
-           <a href={telLink}
+          <a  href={telLink}
             className="btn btn--outline"
           >
             <Phone size={16} />
