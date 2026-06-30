@@ -4,29 +4,29 @@ import SectionHeading from '../components/ui/SectionHeading'
 const BLOG_POSTS = [
   {
     id: 1,
-    title: 'Is Valet Parking Worth It in Dubai?',
-    excerpt: 'Discover why more Dubai venues are investing in professional valet services and how it impacts guest satisfaction.',
+    title: 'How AI is Transforming Valet Parking in Dubai',
+    excerpt: 'Discover how Solo Heights Valet Parking uses AI dispatch, smart vehicle tracking, and predictive safety alerts to redefine the guest experience.',
     date: 'June 10, 2026',
-    category: 'Industry Insights',
+    category: 'Technology',
   },
   {
     id: 2,
-    title: 'How Valet Parking Boosts Guest Experience at Hotels',
-    excerpt: 'A seamless arrival sets the tone for the entire stay. Here is how valet parking transforms the hotel guest experience.',
+    title: 'Why Hotels Choose AI-Powered Valet Over Traditional Service',
+    excerpt: 'A seamless arrival sets the tone for the entire stay. Here is how our AI-driven operations boost guest satisfaction and reduce wait times by 15%.',
     date: 'May 28, 2026',
     category: 'Hotels & Hospitality',
   },
   {
     id: 3,
-    title: 'Why Digital QR Ticket Valet Systems Are the Future',
-    excerpt: 'Traditional paper tickets are being replaced by smart QR systems. We explore what this means for valet operations in Dubai.',
+    title: 'Inside Our Zero-Paper Operations System',
+    excerpt: 'Fully digital ticketing, guest records, and reporting eliminate paper waste and accelerate service speed across all Solo Heights operations.',
     date: 'May 15, 2026',
     category: 'Technology',
   },
   {
     id: 4,
-    title: 'The Importance of Valet Parking for Dubai Events',
-    excerpt: 'Large events require seamless logistics. Professional valet management is no longer a luxury — it is a necessity.',
+    title: 'The Importance of VIP Valet for Premium Dubai Events',
+    excerpt: 'Large events require seamless logistics. Discover how our VIP guest handling protocols deliver discreet, personalized service for high-profile arrivals.',
     date: 'April 30, 2026',
     category: 'Events',
   },
@@ -41,7 +41,8 @@ export default function BlogPage() {
           <div className="gold-line" />
           <h1 className="page-hero__title">Valet Parking Insights</h1>
           <p className="page-hero__subtitle">
-            Industry news, tips, and guides from Dubai's leading valet parking experts.
+            Industry news, AI innovation, and guides from Solo Heights Valet
+            Parking — Dubai's leading AI-powered valet experts.
           </p>
         </div>
       </section>

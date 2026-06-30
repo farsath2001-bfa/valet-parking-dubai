@@ -9,14 +9,13 @@ import g5 from '../../assets/images/gallery/g5.png'
 import g6 from '../../assets/images/gallery/g6.png'
 
 const GALLERY_ITEMS = [
-  { id: 1, img: g1, label: 'Wedding Event' },
-  { id: 2, img: g2, label: 'Hotel Service' },
-  { id: 3, img: g3, label: 'Corporate Event' },
-  { id: 4, img: g4, label: 'Mall Valet' },
-  { id: 5, img: g5, label: 'Beach Club' },
-  { id: 6, img: g6, label: 'Airport Service' },
+  { id: 1, img: g1, label: 'Premium Hotel Valet' },
+  { id: 2, img: g2, label: 'VIP Guest Handling' },
+  { id: 3, img: g3, label: 'Corporate Event Valet' },
+  { id: 4, img: g4, label: 'AI Dispatch in Action' },
+  { id: 5, img: g5, label: 'Uniformed Team' },
+  { id: 6, img: g6, label: 'Curb Flow Management' },
 ]
-
 export default function Gallery() {
   return (
     <section className="section section--dark gallery">

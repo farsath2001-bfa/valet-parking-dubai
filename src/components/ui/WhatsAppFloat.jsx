@@ -4,14 +4,14 @@ import { CONTACT_INFO } from '../../utils/constants'
 export default function WhatsAppFloat() {
   return (
     
-      <a href={`https://wa.me/${CONTACT_INFO.whatsapp}?text=Hello, I'd like to inquire about valet parking services.`}
+      <a href={'https://wa.me/' + CONTACT_INFO.whatsapp + '?text=Hello Solo Heights Valet Parking, I would like to inquire about your valet services.'}
       target="_blank"
       rel="noreferrer"
       className="wa-float"
       aria-label="Chat on WhatsApp"
     >
       <MessageCircle size={28} />
-      <span className="wa-float__tooltip">Chat with us</span>
+      <span className="wa-float__tooltip">Chat with Solo Heights</span>
 
       <style>{`
         .wa-float {

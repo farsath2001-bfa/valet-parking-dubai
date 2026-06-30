@@ -9,14 +9,14 @@ import g5  from '../assets/images/gallery/g5.png'
 import g6  from '../assets/images/gallery/g6.png'
 
 const GALLERY_ITEMS = [
-  { id: 1,  img: g1,  label: 'Wedding Event — Palm Jumeirah' },
-  { id: 2,  img: g2,  label: 'Hotel Valet — Downtown Dubai' },
-  { id: 3,  img: g3,  label: 'Corporate Event — DIFC' },
-  { id: 4,  img: g4,  label: 'Mall Valet — Dubai Marina' },
-  { id: 5,  img: g5,  label: 'Beach Club — JBR' },
-  { id: 6,  img: g6,  label: 'Airport Service — DXB' },
+  { id: 1,  img: g1,  label: 'Premium Hotel Valet — Business Bay' },
+  { id: 2,  img: g2,  label: 'VIP Guest Handling' },
+  { id: 3,  img: g3,  label: 'Corporate Event Valet' },
+  { id: 4,  img: g4,  label: 'AI Dispatch & Smart Tracking' },
+  { id: 5,  img: g5,  label: 'Uniformed Team — Black & Gold' },
+  { id: 6,  img: g6,  label: 'Curb Flow Management' },
+ 
 ]
-
 export default function GalleryPage() {
   return (
     <>
@@ -26,10 +26,10 @@ export default function GalleryPage() {
           <span className="eyebrow">Our Work</span>
           <div className="gold-line" />
           <h1 className="page-hero__title">Photo Gallery</h1>
-          <p className="page-hero__subtitle">
-            A visual showcase of our professional valet operations across
-            Dubai's finest venues and events.
-          </p>
+<p className="page-hero__subtitle">
+  A visual showcase of Solo Heights Valet Parking's AI-powered operations,
+  uniformed team, and luxury service across Dubai's finest venues.
+</p>
         </div>
       </section>
 

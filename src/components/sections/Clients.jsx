@@ -16,12 +16,9 @@ export default function Clients() {
   return (
     <section className="section section--darker clients">
       <div className="container">
-        <SectionHeading
-          eyebrow="Trusted By"
-          title="Our Valued Partners"
-          subtitle="Proud to serve Dubai's most prestigious hotels, malls, and landmarks."
-          center
-        />
+       <SectionHeading eyebrow="Trusted By" title="Our Valued Partners"
+        subtitle="Solo Heights Valet Parking proudly serves Dubai's most prestigious hotels, malls, and landmark venues."
+        center/>
 
         <div className="clients__grid">
           {CLIENT_NAMES.map((name, i) => (
