@@ -83,42 +83,56 @@ export default function Footer() {
           </div>
 
           {/* ── Contact ── */}
-          <div className="footer__col">
-            <h4 className="footer__heading">Get In Touch</h4>
-            <ul className="footer__contact-list">
-              <li className="footer__contact-item">
-                <MapPin size={16} className="footer__contact-icon" />
-                <span>{CONTACT_INFO.address}</span>
-              </li>
-              <li className="footer__contact-item">
-                <Phone size={16} className="footer__contact-icon" />
-                
-                 <a href={'tel:' + CONTACT_INFO.phone}
-                  className="footer__link"
-                >
-                  {CONTACT_INFO.phone}
-                </a>
-              </li>
-              <li className="footer__contact-item">
-                <Mail size={16} className="footer__contact-icon" />
-                
-                <a href={'mailto:' + CONTACT_INFO.email}
-                  className="footer__link"
-                >
-                  {CONTACT_INFO.email}
-                </a>
-              </li>
-            </ul>
+          {/* ── Contact ── */}
+<div className="footer__col">
+  <h4 className="footer__heading">Get In Touch</h4>
+  <ul className="footer__contact-list">
+    <li className="footer__contact-item">
+      <MapPin size={16} className="footer__contact-icon" />
+      <span>{CONTACT_INFO.address}</span>
+    </li>
+    <li className="footer__contact-item">
+      <Phone size={16} className="footer__contact-icon" />
+      
+       <a href={'tel:' + CONTACT_INFO.phone}
+        className="footer__link"
+      >
+        {CONTACT_INFO.phone}
+      </a>
+    </li>
+    <li className="footer__contact-item">
+      <Mail size={16} className="footer__contact-icon" />
+      
+       <a href={'mailto:' + CONTACT_INFO.email}
+        className="footer__link"
+      >
+        {CONTACT_INFO.email}
+      </a>
+    </li>
+  </ul>
 
-            
-             <a href={'https://wa.me/' + CONTACT_INFO.whatsapp}
-              target="_blank"
-              rel="noreferrer"
-              className="btn btn--whatsapp footer__wa-btn"
-            >
-              WhatsApp Us Now
-            </a>
-          </div>
+  {/* ── Map ── */}
+  <div className="footer__map">
+    <iframe
+      title="Solo Heights Valet Parking Location"
+      src="https://maps.google.com/maps?q=Al+Manara+Tower+Business+Bay+Dubai&t=m&z=15&output=embed&iwloc=near"
+      width="100%"
+      height="180"
+      style={{ border: 0 }}
+      allowFullScreen
+      loading="lazy"
+    />
+  </div>
+
+  
+    <a href={'https://wa.me/' + CONTACT_INFO.whatsapp}
+    target="_blank"
+    rel="noreferrer"
+    className="btn btn--whatsapp footer__wa-btn"
+  >
+    WhatsApp Us Now
+  </a>
+</div>
         </div>
 
         {/* ── Divider ── */}
@@ -144,10 +158,10 @@ export default function Footer() {
           padding: 5rem 0 2rem;
         }
 
-        /* ── Grid ── */
-        .footer__grid {
+        /grid ----*/
+          .footer__grid {
           display: grid;
-          grid-template-columns: 1.8fr 1fr 1fr 1.4fr;
+          grid-template-columns: 1.6fr 0.9fr 0.9fr 1.6fr;
           gap: 3rem;
           margin-bottom: 3rem;
         }
@@ -274,6 +288,25 @@ export default function Footer() {
           display: inline-flex;
           align-items: center;
         }
+
+        /* ── Footer Map ── */
+.footer__map {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  margin-bottom: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.footer__map iframe {
+  display: block;
+  filter: grayscale(30%) contrast(1.1);
+  transition: var(--transition);
+}
+
+.footer__map:hover iframe {
+  filter: grayscale(0%) contrast(1);
+}
 
         /* ── Divider ── */
         .footer__divider {
