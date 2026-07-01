@@ -20,18 +20,18 @@ export default function Home() {
       <Hero />
       <TrustBar />
       <About />
-      <Services />
-      <WhyUs />
+      {/* <Services /> */}
+      {/* <WhyUs /> */}
       <HowItWorks />
       <Stats />
-      <Leadership />
+      {/* <Leadership /> */}
       <Workforce/>
-      <Gallery />
+      {/* <Gallery /> */}
       <Clients />
       <Testimonials />
       <QuoteForm />
       <CTABanner />
-      <FAQ />
+      {/* <div id="faq"> <FAQ /> </div> */}
     </>
   )
 }

@@ -6,6 +6,17 @@ export const NAV_LINKS = [
   { label: "Gallery", path: "/gallery" },
   { label: "Blog", path: "/blog" },
   { label: "Contact", path: "/contact" },
+  
+];
+
+export const FOOTER_LINKS = [
+  { label: "Home", path: "/" },
+  { label: "About", path: "/about" },
+  { label: "Services", path: "/services" },
+  { label: "Gallery", path: "/gallery" },
+  { label: "Blog", path: "/blog" },
+  { label: "Contact", path: "/contact" },
+  { label: "FAQ", path: "/#faq" },
 ];
 
 // ─── Services ─────────────────────────────────────────────────

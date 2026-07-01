@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Phone, Mail, MapPin } from 'lucide-react'
-import { NAV_LINKS, SERVICES, CONTACT_INFO } from '../../utils/constants'
+import { NAV_LINKS, SERVICES, CONTACT_INFO, FOOTER_LINKS } from '../../utils/constants'
 import logo from '../../assets/logo.png'
 
 export default function Footer() {
@@ -58,14 +58,14 @@ export default function Footer() {
           <div className="footer__col">
             <h4 className="footer__heading">Quick Links</h4>
             <ul className="footer__list">
-              {NAV_LINKS.map((link) => (
-                <li key={link.path}>
-                  <Link to={link.path} className="footer__link">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+  {FOOTER_LINKS.map((link) => (
+    <li key={link.path}>
+      <Link to={link.path} className="footer__link">
+        {link.label}
+      </Link>
+    </li>
+  ))}
+</ul>
           </div>
 
           {/* ── Services ── */}

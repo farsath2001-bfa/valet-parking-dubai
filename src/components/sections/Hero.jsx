@@ -2,6 +2,10 @@ import { useState, useEffect } from 'react'
 import { ChevronLeft, ChevronRight, Phone } from 'lucide-react'
 import { CONTACT_INFO } from '../../utils/constants'
 
+import hero1 from '../../assets/images/hero1.jpg'
+import hero2 from '../../assets/images/hero2.jpg'
+import hero3 from '../../assets/images/hero3.jpg'
+
 const SLIDES = [
   {
     id: 1,
@@ -10,7 +14,7 @@ const SLIDES = [
     titleGold: '& Hospitality',
     subtitle:
       'Solo Heights Valet Parking delivers world-class valet experiences through precision, professionalism, and fully integrated AI-powered operational excellence.',
-    bg: 'linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #0a0a0a 100%)',
+    image: hero1,
   },
   {
     id: 2,
@@ -19,7 +23,7 @@ const SLIDES = [
     titleGold: 'For Every Venue',
     subtitle:
       'From hotels to events to premium venues — our 50+ trained professionals deliver white-glove valet parking with unmatched care.',
-    bg: 'linear-gradient(135deg, #0d0d0d 0%, #1a0a00 50%, #0d0d0d 100%)',
+    image: hero2,
   },
   {
     id: 3,
@@ -28,7 +32,7 @@ const SLIDES = [
     titleGold: 'Flawless Service',
     subtitle:
       'Our fully integrated AI system reduces wait times by 15%, cuts operational costs by 10%, and maintains a 99.9% incident-free record.',
-    bg: 'linear-gradient(135deg, #080808 0%, #0a1628 50%, #080808 100%)',
+    image: hero3,
   },
 ]
 
@@ -60,9 +64,24 @@ export default function Hero() {
   const slide = SLIDES[current]
 
   return (
-    <section className="hero" style={{ background: slide.bg }}>
+    <section className="hero">
+
+      {/* ── Background Images ── */}
+      {SLIDES.map((s, i) => (
+        <div
+          key={s.id}
+          className={`hero__bg ${i === current ? 'hero__bg--active' : ''}`}
+          style={{ backgroundImage: 'url(' + s.image + ')' }}
+        />
+      ))}
+
+      {/* ── Dark Overlay ── */}
+      <div className="hero__overlay" />
+
+      {/* ── Gold Pattern ── */}
       <div className="hero__pattern" />
 
+      {/* ── Content ── */}
       <div className={`container hero__content ${animating ? 'hero__content--fade' : ''}`}>
 
         <span className="eyebrow hero__eyebrow">{slide.eyebrow}</span>
@@ -92,7 +111,7 @@ export default function Hero() {
             Get Free Quote
           </a>
           
-            <a href={'tel:' + CONTACT_INFO.phone}
+           <a href={'tel:' + CONTACT_INFO.phone}
             className="btn btn--outline"
           >
             <Phone size={16} />
@@ -101,6 +120,7 @@ export default function Hero() {
         </div>
       </div>
 
+      {/* ── Arrows ── */}
       <button className="hero__arrow hero__arrow--prev" onClick={goPrev}>
         <ChevronLeft size={24} />
       </button>
@@ -108,6 +128,7 @@ export default function Hero() {
         <ChevronRight size={24} />
       </button>
 
+      {/* ── Dots ── */}
       <div className="hero__dots">
         {SLIDES.map((_, i) => (
           <button
@@ -118,6 +139,7 @@ export default function Hero() {
         ))}
       </div>
 
+      {/* ── Scroll Indicator ── */}
       <div className="hero__scroll">
         <span>Scroll</span>
         <div className="hero__scroll-line" />
@@ -130,9 +152,39 @@ export default function Hero() {
           display: flex;
           align-items: center;
           overflow: hidden;
-          transition: background 1s ease;
+          background: #0a0a0a;
         }
 
+        /* ── Background Images ── */
+        .hero__bg {
+          position: absolute;
+          inset: 0;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          opacity: 0;
+          transition: opacity 1.2s ease;
+          z-index: 0;
+        }
+
+        .hero__bg--active {
+          opacity: 1;
+        }
+
+        /* ── Dark Overlay ── */
+        .hero__overlay {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.85) 0%,
+            rgba(0, 0, 0, 0.6) 50%,
+            rgba(0, 0, 0, 0.3) 100%
+          );
+          z-index: 1;
+        }
+
+        /* ── Gold Pattern ── */
         .hero__pattern {
           position: absolute;
           inset: 0;
@@ -145,11 +197,13 @@ export default function Hero() {
               transparent 60px
             );
           pointer-events: none;
+          z-index: 2;
         }
 
+        /* ── Content ── */
         .hero__content {
           position: relative;
-          z-index: 2;
+          z-index: 3;
           padding-top: 8rem;
           padding-bottom: 6rem;
           max-width: 780px;
@@ -188,6 +242,7 @@ export default function Hero() {
           max-width: 580px;
         }
 
+        /* ── Badges ── */
         .hero__badges {
           display: flex;
           flex-wrap: wrap;
@@ -205,19 +260,22 @@ export default function Hero() {
           padding: 0.4rem 1rem;
           border-radius: 100px;
           background: rgba(200, 168, 101, 0.06);
+          backdrop-filter: blur(4px);
         }
 
+        /* ── CTAs ── */
         .hero__ctas {
           display: flex;
           flex-wrap: wrap;
           gap: 1rem;
         }
 
+        /* ── Arrows ── */
         .hero__arrow {
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
-          z-index: 3;
+          z-index: 4;
           width: 50px;
           height: 50px;
           border: 1px solid var(--color-border);
@@ -241,6 +299,7 @@ export default function Hero() {
         .hero__arrow--prev { left: 2rem; }
         .hero__arrow--next { right: 2rem; }
 
+        /* ── Dots ── */
         .hero__dots {
           position: absolute;
           bottom: 3rem;
@@ -248,7 +307,7 @@ export default function Hero() {
           transform: translateX(-50%);
           display: flex;
           gap: 0.5rem;
-          z-index: 3;
+          z-index: 4;
         }
 
         .hero__dot {
@@ -267,6 +326,7 @@ export default function Hero() {
           border-radius: 4px;
         }
 
+        /* ── Scroll ── */
         .hero__scroll {
           position: absolute;
           right: 2.5rem;
@@ -275,7 +335,7 @@ export default function Hero() {
           flex-direction: column;
           align-items: center;
           gap: 0.5rem;
-          z-index: 3;
+          z-index: 4;
         }
 
         .hero__scroll span {
@@ -298,10 +358,14 @@ export default function Hero() {
           50%       { opacity: 1; }
         }
 
+        /* ── Responsive ── */
         @media (max-width: 768px) {
           .hero__content { padding-top: 7rem; }
           .hero__arrow { display: none; }
           .hero__scroll { display: none; }
+          .hero__overlay {
+            background: rgba(0, 0, 0, 0.75);
+          }
         }
       `}</style>
     </section>
