@@ -14,7 +14,7 @@ export default function Workforce() {
         />
 
         {/* ── Top 3 Cards ── */}
-        <div className="workforce__cards">
+        <div className="workforce__cards reveal">
           {WORKFORCE.cards.map((item, i) => {
             const Icon = Icons[item.icon] || Icons.BadgeCheck
             return (
@@ -30,7 +30,7 @@ export default function Workforce() {
         </div>
 
         {/* ── Staff Training + Operational Discipline ── */}
-        <div className="workforce__highlights">
+        <div className="workforce__highlights reveal">
           <div className="workforce__highlight workforce__highlight--gold">
             <h3 className="workforce__highlight-title">{WORKFORCE.staffTraining.title}</h3>
             <p className="workforce__highlight-desc">{WORKFORCE.staffTraining.description}</p>

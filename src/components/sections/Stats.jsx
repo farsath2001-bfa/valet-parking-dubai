@@ -5,7 +5,7 @@ export default function Stats() {
   return (
     <section className="stats">
       <div className="container">
-        <div className="stats__grid">
+        <div className="stats__grid reveal">
           {STATS.map((stat, i) => (
             <StatCounter
               key={i}

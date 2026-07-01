@@ -17,7 +17,7 @@ export default function About() {
     <section className="section section--darker about">
       <div className="container about__inner">
 
-        <div className="about__image-wrap">
+       <div className="about__image-wrap reveal reveal--left">
           <div className="about__image-box">
             <div className="about__image-placeholder">
               <span>Team Photo</span>
@@ -29,7 +29,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="about__content">
+        <div className="about__content reveal reveal--right">
           <SectionHeading
             eyebrow="About Us"
             title="Excellence in Every Drive"

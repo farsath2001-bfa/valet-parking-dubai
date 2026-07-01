@@ -18,7 +18,7 @@ export default function Leadership() {
           </div>
         </div>
 
-        <div className="leadership__content">
+       <div className="leadership__image-wrap reveal reveal--left">
           <SectionHeading
             eyebrow="Leadership"
             title={LEADERSHIP.name}

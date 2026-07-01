@@ -14,7 +14,7 @@ export default function Services() {
           center
         />
 
-        <div className="services__grid">
+        <div className="services__grid reveal">
           {SERVICES.map((service) => (
             <ServiceCard
               key={service.id}

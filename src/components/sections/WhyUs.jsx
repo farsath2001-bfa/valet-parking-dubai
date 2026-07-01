@@ -15,9 +15,9 @@ export default function WhyUs() {
 
         <div className="whyus__grid">
           {WHY_US.map((item, i) => {
-            const LucideIcon = Icons[item.icon] || Icons.Star
-            return (
-              <div key={i} className="whyus__card">
+           const LucideIcon = Icons[item.icon] || Icons.Star
+           return (
+           <div key={i} className={`whyus__card reveal reveal--delay-${i + 1}`}>
                 <div className="whyus__icon">
                   <LucideIcon size={24} />
                 </div>

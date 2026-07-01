@@ -18,7 +18,7 @@ export default function FAQ() {
           center
         />
 
-        <div className="faq__list">
+        <div className="faq__list reveal">
           {FAQS.map((item, i) => (
             <div
               key={i}

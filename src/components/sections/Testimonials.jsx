@@ -13,7 +13,7 @@ export default function Testimonials() {
           center
         />
 
-        <div className="testimonials__grid">
+        <div className="testimonials__grid reveal">
           {TESTIMONIALS.map((t, i) => (
             <TestimonialCard
               key={i}
