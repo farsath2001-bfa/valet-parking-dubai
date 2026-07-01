@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import SectionHeading from '../components/ui/SectionHeading'
+import Testimonials from '../components/sections/Testimonials'
+import CTABanner from '../components/sections/CTABanner'
 
 const BLOG_POSTS = [
   {
@@ -35,6 +37,7 @@ const BLOG_POSTS = [
 export default function BlogPage() {
   return (
     <>
+      {/* ── Page Hero ── */}
       <section className="page-hero">
         <div className="container page-hero__inner">
           <span className="eyebrow">Our Blog</span>
@@ -47,6 +50,7 @@ export default function BlogPage() {
         </div>
       </section>
 
+      {/* ── Blog Grid ── */}
       <section className="section section--dark">
         <div className="container">
           <SectionHeading
@@ -57,7 +61,7 @@ export default function BlogPage() {
           <div className="blog__grid">
             {BLOG_POSTS.map((post) => (
               <Link
-                to={`/blog/${post.id}`}
+                to={'/blog/' + post.id}
                 key={post.id}
                 className="blog-card"
               >
@@ -78,6 +82,12 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
+
+      {/* ── Testimonials ── */}
+      <Testimonials />
+
+      {/* ── CTA ── */}
+      <CTABanner />
 
       <style>{`
         .page-hero {

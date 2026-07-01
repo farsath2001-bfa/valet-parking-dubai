@@ -8,7 +8,7 @@ import Stats        from '../components/sections/Stats'
 import Leadership   from '../components/sections/Leadership'
 import Workforce from '../components/sections/Workforce'
 import Gallery      from '../components/sections/Gallery'
-import Clients      from '../components/sections/Clients'
+// import Clients      from '../components/sections/Clients'
 import Testimonials from '../components/sections/Testimonials'
 import QuoteForm    from '../components/sections/QuoteForm'
 import CTABanner    from '../components/sections/CTABanner'
@@ -25,10 +25,10 @@ export default function Home() {
       <HowItWorks />
       <Stats />
       {/* <Leadership /> */}
-      <Workforce/>
+      {/* <Workforce/> */}
       {/* <Gallery /> */}
-      <Clients />
-      <Testimonials />
+      {/* <Clients /> */}
+      {/* <Testimonials /> */}
       <QuoteForm />
       <CTABanner />
       {/* <div id="faq"> <FAQ /> </div> */}

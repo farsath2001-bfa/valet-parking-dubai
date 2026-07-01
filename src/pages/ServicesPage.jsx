@@ -1,6 +1,7 @@
 import ServiceCard from '../components/ui/ServiceCard'
 import SectionHeading from '../components/ui/SectionHeading'
 import CTABanner from '../components/sections/CTABanner'
+import Clients from '../components/sections/Clients'
 import { SERVICES, COMPANY } from '../utils/constants'
 
 export default function ServicesPage() {
@@ -76,6 +77,9 @@ export default function ServicesPage() {
           }
         `}</style>
       </section>
+
+      {/* ── Clients ── */}
+      <Clients />
 
       {/* ── Our Promise ── */}
       <section className="section section--darker promise">
