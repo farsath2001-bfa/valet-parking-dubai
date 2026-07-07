@@ -16,7 +16,6 @@ export const FOOTER_LINKS = [
   { label: "Gallery", path: "/gallery" },
   { label: "Events", path: "/events" },
   { label: "Contact", path: "/contact" },
-  { label: "FAQ", path: "/#faq" },
 ];
 
 // ─── Services ─────────────────────────────────────────────────
