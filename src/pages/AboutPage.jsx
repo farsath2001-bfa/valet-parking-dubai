@@ -3,14 +3,15 @@ import SectionHeading from '../components/ui/SectionHeading'
 import Stats          from '../components/sections/Stats'
 import Leadership     from '../components/sections/Leadership'
 import CTABanner      from '../components/sections/CTABanner'
+import Workforce      from '../components/sections/Workforce'
 import { COMPANY }    from '../utils/constants'
-import Workforce from '../components/sections/Workforce'
+import teamPhoto      from '../assets/images/gallery/g0.png'
 
 const VALUES = [
-  { title: 'AI-Powered Operations', desc: 'A fully integrated AI system manages vehicle flow, guest wait times, and real-time parking data.' },
-  { title: 'Elite Uniformed Team',  desc: 'Our 50 trained valet professionals wear premium, weather-appropriate uniforms reflecting Dubai\'s luxury standard.' },
-  { title: 'Proven Excellence',     desc: 'A 99.9% incident-free record and consistently elevated guest satisfaction scores define our operational standard.' },
-  { title: 'Continuous Development',desc: 'Ongoing coaching, performance reviews, and advanced training keep our team at the forefront of valet excellence.' },
+  { title: 'AI-Powered Operations',  desc: 'A fully integrated AI system manages vehicle flow, guest wait times, and real-time parking data.' },
+  { title: 'Elite Uniformed Team',   desc: "Our 50 trained valet professionals wear premium, weather-appropriate uniforms reflecting Dubai's luxury standard." },
+  { title: 'Proven Excellence',      desc: 'A 99.9% incident-free record and consistently elevated guest satisfaction scores define our operational standard.' },
+  { title: 'Continuous Development', desc: 'Ongoing coaching, performance reviews, and advanced training keep our team at the forefront of valet excellence.' },
 ]
 
 export default function AboutPage() {
@@ -45,10 +46,13 @@ export default function AboutPage() {
             <p className="about-story__text">{COMPANY.commitment}</p>
           </div>
 
-          <div className="about-story__image">
-            <div className="about-story__image-placeholder">
-              <span>Team Photo</span>
-            </div>
+          {/* ── Team Photo ── */}
+          <div className="about__image-box">
+            <img
+              src={teamPhoto}
+              alt="Solo Heights Valet Parking Team"
+              className="about__image"
+            />
           </div>
         </div>
       </section>
@@ -78,10 +82,14 @@ export default function AboutPage() {
 
       {/* ── Leadership ── */}
       <Leadership />
-      <Workforce/>
+
+      {/* ── Workforce ── */}
+      <Workforce />
+
       <CTABanner />
 
       <style>{`
+        /* ── Page Hero ── */
         .page-hero {
           background: var(--color-bg-2);
           padding: 10rem 0 5rem;
@@ -105,6 +113,7 @@ export default function AboutPage() {
           line-height: 1.8;
         }
 
+        /* ── Story ── */
         .about-story {
           display: grid;
           grid-template-columns: 1.2fr 1fr;
@@ -127,21 +136,29 @@ export default function AboutPage() {
           margin-bottom: 1rem;
         }
 
-        .about-story__image-placeholder {
-          aspect-ratio: 4/5;
-          background: var(--color-bg-3);
-          border: 1px solid var(--color-border);
+        /* ── Team Photo ── */
+        .about__image-box {
           border-radius: var(--radius-lg);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: var(--color-gray);
-          font-size: var(--fs-sm);
-          min-height: 400px;
+          overflow: hidden;
+          border: 1px solid var(--color-border);
           position: sticky;
           top: 100px;
         }
 
+        .about__image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center top;
+          display: block;
+          transition: transform 0.6s ease;
+        }
+
+        .about__image-box:hover .about__image {
+          transform: scale(1.04);
+        }
+
+        /* ── Values ── */
         .about-values {
           display: grid;
           grid-template-columns: repeat(4, 1fr);
@@ -180,13 +197,19 @@ export default function AboutPage() {
           line-height: 1.7;
         }
 
+        /* ── Responsive ── */
         @media (max-width: 1024px) {
           .about-values { grid-template-columns: repeat(2, 1fr); }
         }
 
         @media (max-width: 768px) {
-          .about-story { grid-template-columns: 1fr; gap: 2rem; }
-          .about-story__image-placeholder { position: static; }
+          .about-story {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+          }
+          .about__image-box {
+            position: static;
+          }
         }
 
         @media (max-width: 560px) {

@@ -10,8 +10,9 @@ import AboutPage    from './pages/AboutPage'
 import ServicesPage from './pages/ServicesPage'
 import GalleryPage  from './pages/GalleryPage'
 import ContactPage  from './pages/ContactPage'
-import BlogPage     from './pages/BlogPage'
-import BlogPost     from './pages/BlogPost'
+// import BlogPage     from './pages/BlogPage'
+// import BlogPost     from './pages/BlogPost'
+import EventsPage from './pages/EventPage'
 import NotFound from './pages/NotFound'
 import PageLoader from './components/ui/PageLoader'
 
@@ -54,8 +55,7 @@ function App() {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/gallery"  element={<GalleryPage />} />
           <Route path="/contact"  element={<ContactPage />} />
-          <Route path="/blog"     element={<BlogPage />} />
-          <Route path="/blog/:id" element={<BlogPost />} />
+          <Route path="/events" element={<EventsPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

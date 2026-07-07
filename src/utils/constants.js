@@ -4,7 +4,7 @@ export const NAV_LINKS = [
   { label: "About", path: "/about" },
   { label: "Services", path: "/services" },
   { label: "Gallery", path: "/gallery" },
-  { label: "Blog", path: "/blog" },
+   { label: "Events", path: "/events" },
   { label: "Contact", path: "/contact" },
   
 ];
@@ -14,7 +14,7 @@ export const FOOTER_LINKS = [
   { label: "About", path: "/about" },
   { label: "Services", path: "/services" },
   { label: "Gallery", path: "/gallery" },
-  { label: "Blog", path: "/blog" },
+  { label: "Events", path: "/events" },
   { label: "Contact", path: "/contact" },
   { label: "FAQ", path: "/#faq" },
 ];
@@ -282,6 +282,70 @@ export const CONTACT_INFO = {
   email: "info@soloheights-valet.ae",
   address: "Business Bay, Al Manara Tower, 3207, Dubai, UAE",
 };
+
+// ─── Events ───────────────────────────────────────────────────
+export const EVENTS = [
+  {
+    id: 1,
+    category: 'Wedding',
+    title: 'Luxury Wedding Valet — Palm Jumeirah',
+    description:
+      'Solo Heights managed seamless valet operations for a 300-guest luxury wedding at a Palm Jumeirah villa. Custom-branded podiums, bilingual attendants, and VIP lane management.',
+    guests: '300+',
+    location: 'Palm Jumeirah, Dubai',
+    date: 'June 2026',
+  },
+  {
+    id: 2,
+    category: 'Corporate',
+    title: 'Annual Corporate Gala — DIFC',
+    description:
+      'Full valet management for a high-profile corporate gala in DIFC. AI dispatch system handled peak-hour arrivals with zero wait time complaints.',
+    guests: '500+',
+    location: 'DIFC, Dubai',
+    date: 'May 2026',
+  },
+  {
+    id: 3,
+    category: 'Hotel',
+    title: 'Hotel Grand Opening — Business Bay',
+    description:
+      'Provided premium valet services for the grand opening of a 5-star hotel in Business Bay. Our uniformed team set the tone for the hotel\'s luxury brand from day one.',
+    guests: '200+',
+    location: 'Business Bay, Dubai',
+    date: 'April 2026',
+  },
+  {
+    id: 4,
+    category: 'Private',
+    title: 'VIP Private Dinner — Downtown Dubai',
+    description:
+      'Exclusive VIP valet service for a high-profile private dinner in Downtown Dubai. Discreet, personalized handling for every guest arrival and departure.',
+    guests: '80+',
+    location: 'Downtown Dubai',
+    date: 'March 2026',
+  },
+  {
+    id: 5,
+    category: 'Exhibition',
+    title: 'Dubai Exhibition Centre Event',
+    description:
+      'Large-scale valet management for a multi-day exhibition event. AI-powered curb flow management handled thousands of vehicles across 3 days without incident.',
+    guests: '2,000+',
+    location: 'Dubai Exhibition Centre',
+    date: 'February 2026',
+  },
+  {
+    id: 6,
+    category: 'Restaurant',
+    title: 'Fine Dining Restaurant Launch — Marina',
+    description:
+      'Ongoing valet partnership with a premium restaurant in Dubai Marina. Our team operates nightly service ensuring guests arrive and depart with a flawless experience.',
+    guests: 'Ongoing',
+    location: 'Dubai Marina',
+    date: 'Ongoing',
+  },
+];
 
 // ─── Client Logos ─────────────────────────────────────────────
 export const CLIENTS = [

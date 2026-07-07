@@ -2,6 +2,7 @@ import { CheckCircle } from 'lucide-react'
 import SectionHeading from '../ui/SectionHeading'
 import Button from '../ui/Button'
 import { CONTACT_INFO, COMPANY } from '../../utils/constants'
+import teamPhoto from '../../assets/images/gallery/g0.png'
 
 const HIGHLIGHTS = [
   'Fully integrated AI system for real-time operations',
@@ -17,11 +18,13 @@ export default function About() {
     <section className="section section--darker about">
       <div className="container about__inner">
 
-       <div className="about__image-wrap reveal reveal--left">
+        <div className="about__image-wrap reveal reveal--left">
           <div className="about__image-box">
-            <div className="about__image-placeholder">
-              <span>Team Photo</span>
-            </div>
+            <img
+              src={teamPhoto}
+              alt="Solo Heights Valet Parking Team"
+              className="about__image"
+            />
           </div>
           <div className="about__badge">
             <span className="about__badge-number">50+</span>
@@ -75,16 +78,17 @@ export default function About() {
           aspect-ratio: 4/5;
         }
 
-        .about__image-placeholder {
+        .about__image {
           width: 100%;
           height: 100%;
-          background: var(--color-bg-3);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: var(--color-gray);
-          font-size: var(--fs-sm);
-          min-height: 500px;
+          object-fit: cover;
+          object-position: center top;
+          display: block;
+          transition: transform 0.6s ease;
+        }
+
+        .about__image-wrap:hover .about__image {
+          transform: scale(1.04);
         }
 
         .about__badge {

@@ -13,6 +13,8 @@ import Testimonials from '../components/sections/Testimonials'
 import QuoteForm    from '../components/sections/QuoteForm'
 import CTABanner    from '../components/sections/CTABanner'
 import FAQ          from '../components/sections/FAQ'
+import teamPhoto      from '../assets/images/gallery/g0.png'
+
 
 export default function Home() {
   return (
