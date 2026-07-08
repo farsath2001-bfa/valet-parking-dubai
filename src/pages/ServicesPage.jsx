@@ -3,7 +3,6 @@ import SectionHeading from '../components/ui/SectionHeading'
 import CTABanner from '../components/sections/CTABanner'
 import Clients from '../components/sections/Clients'
 import { SERVICES, COMPANY } from '../utils/constants'
-import Seo from '../components/ui/Seo'
 
 export default function ServicesPage() {
   return (
@@ -19,12 +18,7 @@ export default function ServicesPage() {
             hospitality standards, and a fully integrated AI operations platform.
           </p>
         </div>
-        <Seo
-  title="Our Services"
-  description="Premium valet parking services in Dubai — hotel valet, wedding valet, corporate events, VIP handling, AI dispatch, curb flow management and more."
-  keywords="valet parking services Dubai, hotel valet Dubai, wedding valet Dubai, corporate valet Dubai, VIP valet Dubai"
-  url="https://valet-parking-dubai.vercel.app/services"
-/>
+      
 
         <style>{`
           .page-hero {

@@ -2,7 +2,6 @@ import { MapPin, Users, Calendar, ArrowRight } from 'lucide-react'
 import SectionHeading from '../components/ui/SectionHeading'
 import CTABanner from '../components/sections/CTABanner'
 import { EVENTS } from '../utils/constants'
-import Seo from '../components/ui/Seo'
 
 const CATEGORIES = ['All', 'Wedding', 'Corporate', 'Hotel', 'Private', 'Exhibition', 'Restaurant']
 
@@ -113,12 +112,7 @@ export default function EventsPage() {
           </div>
         </div>
       </section>
-      <Seo
-  title="Events"
-  description="Solo Heights Valet Parking has served 500+ events across Dubai — weddings, corporate galas, hotel openings, private dinners and exhibitions."
-  keywords="event valet parking Dubai, wedding valet Dubai, corporate event valet Dubai, exhibition valet Dubai"
-  url="https://valet-parking-dubai.vercel.app/events"
-/>
+     
 
       {/* ── Book Your Event ── */}
       <section className="section section--darker events__book">

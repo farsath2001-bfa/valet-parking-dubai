@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Home, Phone } from 'lucide-react'
 import { CONTACT_INFO } from '../utils/constants'
-import Seo from '../components/ui/Seo'
 
 export default function NotFound() {
   return (
@@ -26,10 +25,7 @@ export default function NotFound() {
           The page you are looking for doesn't exist or has been moved.
           Let us drive you back to where you need to be.
         </p>
-        <Seo
-  title="Page Not Found"
-  description="The page you are looking for doesn't exist. Return to Solo Heights Valet Parking home page."
-/>
+     
 
         {/* ── CTAs ── */}
         <div className="notfound__ctas">

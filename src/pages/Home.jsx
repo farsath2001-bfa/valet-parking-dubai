@@ -14,7 +14,6 @@ import QuoteForm    from '../components/sections/QuoteForm'
 import CTABanner    from '../components/sections/CTABanner'
 import FAQ          from '../components/sections/FAQ'
 import teamPhoto      from '../assets/images/gallery/g0.png'
-import Seo from '../components/ui/Seo'
 
 
 // export default function Home() {
@@ -43,12 +42,7 @@ import Seo from '../components/ui/Seo'
 export default function Home() {
   return (
     <>
-      <Seo
-        title="Home"
-        description="Solo Heights Valet Parking — Dubai's premier AI-powered luxury valet service. 50+ professionals, 99.9% incident-free record. Business Bay, Dubai."
-        keywords="valet parking Dubai, luxury valet Dubai, AI valet parking Dubai, Solo Heights valet parking"
-        url="https://valet-parking-dubai.vercel.app"
-      />
+      
       <Hero />
       <TrustBar />
       <About />

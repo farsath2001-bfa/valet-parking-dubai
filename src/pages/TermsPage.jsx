@@ -1,16 +1,10 @@
-import Seo from '../components/ui/Seo'
 import CTABanner from '../components/sections/CTABanner'
 import { CONTACT_INFO } from '../utils/constants'
 
 export default function TermsPage() {
   return (
     <>
-      <Seo
-        title="Terms & Conditions"
-        description="Solo Heights Valet Parking terms and conditions — rules governing use of our valet parking services in Dubai."
-        url="https://valet-parking-dubai.vercel.app/terms"
-      />
-
+     
       {/* ── Page Hero ── */}
       <section className="page-hero">
         <div className="container page-hero__inner">

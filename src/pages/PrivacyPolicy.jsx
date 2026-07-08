@@ -1,15 +1,10 @@
-import Seo from '../components/ui/Seo'
 import CTABanner from '../components/sections/CTABanner'
 import { CONTACT_INFO, COMPANY } from '../utils/constants'
 
 export default function PrivacyPolicy() {
   return (
     <>
-      <Seo
-        title="Privacy Policy"
-        description="Solo Heights Valet Parking privacy policy — how we collect, use, and protect your personal information."
-        url="https://valet-parking-dubai.vercel.app/privacy"
-      />
+      
 
       {/* ── Page Hero ── */}
       <section className="page-hero">
