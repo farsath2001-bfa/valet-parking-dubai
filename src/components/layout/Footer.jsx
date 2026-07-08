@@ -148,8 +148,8 @@ export default function Footer() {
             © {currentYear} Solo Heights Valet Parking. All rights reserved.
           </p>
           <div className="footer__bottom-links">
-            <Link to="#" className="footer__link">Privacy Policy</Link>
-            <Link to="#" className="footer__link">Terms & Conditions</Link>
+            <Link to="/privacy" className="footer__link">Privacy Policy</Link>
+            <Link to="/terms"   className="footer__link">Terms & Conditions</Link>
           </div>
         </div>
 

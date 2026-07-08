@@ -15,7 +15,8 @@ import ContactPage  from './pages/ContactPage'
 import EventsPage from './pages/EventPage'
 import NotFound from './pages/NotFound'
 import PageLoader from './components/ui/PageLoader'
-
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import TermsPage from './pages/TermsPage'
 import './styles/index.css'
 
 function ScrollReveal() {
@@ -57,6 +58,8 @@ function App() {
           <Route path="/contact"  element={<ContactPage />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/terms"   element={<TermsPage />} />
         </Routes>
       </main>
       <Footer />
