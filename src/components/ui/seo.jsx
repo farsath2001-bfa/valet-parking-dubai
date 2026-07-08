@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet-async'
 
 export default function Seo({ title, description, keywords, url }) {
   const siteName = 'Solo Heights Valet Parking'
-  const defaultDesc = 'Premium AI-powered valet parking and hospitality services in Dubai. Excellence in Every Drive — Solo Heights Valet Parking.'
+  const defaultDesc = 'Premium AI-powered valet parking and hospitality services in Dubai. Excellence in Every Drive.'
   const defaultKeywords = 'valet parking Dubai, luxury valet Dubai, AI valet parking, Solo Heights valet, hotel valet Dubai, event valet Dubai, Business Bay valet'
   const fullTitle = title ? title + ' | ' + siteName : siteName + ' | Excellence in Every Drive'
 
