@@ -1,5 +1,6 @@
 import SectionHeading from '../components/ui/SectionHeading'
 import CTABanner from '../components/sections/CTABanner'
+import Seo from '../components/ui/seo'
 
 import g1  from '../assets/images/gallery/g1.png'
 import g2  from '../assets/images/gallery/g2.png'
@@ -32,6 +33,12 @@ export default function GalleryPage() {
 </p>
         </div>
       </section>
+      <Seo
+  title="Gallery"
+  description="View Solo Heights Valet Parking's professional operations gallery — uniformed team, luxury vehicle handling, and AI-powered valet services across Dubai."
+  keywords="valet parking gallery Dubai, Solo Heights team, valet parking photos Dubai"
+  url="https://valet-parking-dubai.vercel.app/gallery"
+/>
 
       {/* ── Gallery Grid ── */}
       <section className="section section--dark">

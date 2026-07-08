@@ -1,7 +1,7 @@
 import { Phone, Mail, MapPin, Clock } from 'lucide-react'
 import QuoteForm from '../components/sections/QuoteForm'
 import { CONTACT_INFO } from '../utils/constants'
-
+import Seo from '../components/ui/seo'
 const CONTACT_CARDS = [
   {
     icon: Phone,
@@ -44,6 +44,12 @@ export default function ContactPage() {
           </p>
         </div>
       </section>
+      <Seo
+  title="Contact Us"
+  description="Contact Solo Heights Valet Parking — Business Bay, Al Manara Tower, Dubai. Call +971 56 836 7272 or WhatsApp for a free quote."
+  keywords="contact Solo Heights valet parking, valet parking quote Dubai, valet parking Business Bay Dubai"
+  url="https://valet-parking-dubai.vercel.app/contact"
+/>
 
       {/* ── Contact Cards ── */}
       <section className="section section--dark">
