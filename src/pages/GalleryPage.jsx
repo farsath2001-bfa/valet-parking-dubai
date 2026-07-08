@@ -1,6 +1,6 @@
 import SectionHeading from '../components/ui/SectionHeading'
 import CTABanner from '../components/sections/CTABanner'
-import Seo from '../components/ui/seo'
+import Seo from '../components/ui/Seo'
 
 import g1  from '../assets/images/gallery/g1.png'
 import g2  from '../assets/images/gallery/g2.png'

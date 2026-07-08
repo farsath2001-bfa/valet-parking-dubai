@@ -1,7 +1,7 @@
 import { Phone, Mail, MapPin, Clock } from 'lucide-react'
 import QuoteForm from '../components/sections/QuoteForm'
 import { CONTACT_INFO } from '../utils/constants'
-import Seo from '../components/ui/seo'
+import Seo from '../components/ui/Seo'
 const CONTACT_CARDS = [
   {
     icon: Phone,

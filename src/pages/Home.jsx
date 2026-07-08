@@ -14,7 +14,7 @@ import QuoteForm    from '../components/sections/QuoteForm'
 import CTABanner    from '../components/sections/CTABanner'
 import FAQ          from '../components/sections/FAQ'
 import teamPhoto      from '../assets/images/gallery/g0.png'
-import Seo from '../components/ui/seo'
+import Seo from '../components/ui/Seo'
 
 
 // export default function Home() {

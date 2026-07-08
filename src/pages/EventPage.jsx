@@ -2,7 +2,7 @@ import { MapPin, Users, Calendar, ArrowRight } from 'lucide-react'
 import SectionHeading from '../components/ui/SectionHeading'
 import CTABanner from '../components/sections/CTABanner'
 import { EVENTS } from '../utils/constants'
-import Seo from '../components/ui/seo'
+import Seo from '../components/ui/Seo'
 
 const CATEGORIES = ['All', 'Wedding', 'Corporate', 'Hotel', 'Private', 'Exhibition', 'Restaurant']
 

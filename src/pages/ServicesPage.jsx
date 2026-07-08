@@ -3,7 +3,7 @@ import SectionHeading from '../components/ui/SectionHeading'
 import CTABanner from '../components/sections/CTABanner'
 import Clients from '../components/sections/Clients'
 import { SERVICES, COMPANY } from '../utils/constants'
-import Seo from '../components/ui/seo'
+import Seo from '../components/ui/Seo'
 
 export default function ServicesPage() {
   return (

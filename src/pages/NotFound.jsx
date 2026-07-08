@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Home, Phone } from 'lucide-react'
 import { CONTACT_INFO } from '../utils/constants'
-import Seo from '../components/ui/seo'
+import Seo from '../components/ui/Seo'
 
 export default function NotFound() {
   return (
