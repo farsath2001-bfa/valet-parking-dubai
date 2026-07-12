@@ -96,7 +96,7 @@ export default function Hero() {
         <p className="hero__subtitle">{slide.subtitle}</p>
 
         <div className="hero__badges">
-          {['AI-Powered Operations', '50+ Professionals', '99.9% Incident-Free', 'Business Bay, Dubai'].map((badge) => (
+          {['AI-Powered Operations','99.9% Incident-Free', 'Business Bay, Dubai'].map((badge) => (
             <span key={badge} className="hero__badge">{badge}</span>
           ))}
         </div>

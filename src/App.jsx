@@ -42,12 +42,22 @@ function ScrollReveal() {
 
   return null
 }
+ function ScrollToTop() {
+  const location = useLocation()
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' })
+  }, [location])
+
+  return null
+}
 
 function App() {
   return (
     <BrowserRouter>
     <PageLoader/>
       <ScrollReveal />
+      <ScrollToTop/>
       <Navbar />
       <main>
         <Routes>

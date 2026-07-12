@@ -6,7 +6,7 @@ import teamPhoto from '../../assets/images/gallery/g0.png'
 
 const HIGHLIGHTS = [
   'Fully integrated AI system for real-time operations',
-  '50+ uniformed, certified valet professionals',
+  'Uniformed, certified valet professionals',
   '99.9% incident-free operational record',
   'Branded black & gold attire for Dubai weather',
   '15% faster wait times through AI dispatch',
@@ -26,10 +26,10 @@ export default function About() {
               className="about__image"
             />
           </div>
-          <div className="about__badge">
-            <span className="about__badge-number">50+</span>
-            <span className="about__badge-text">Trained Professionals</span>
-          </div>
+          {/* <div className="about__badge">
+           <span className="about__badge-number">99.9%</span>
+           <span className="about__badge-text">Incident-Free Record</span>
+        </div> */}
         </div>
 
         <div className="about__content reveal reveal--right">

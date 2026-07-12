@@ -6,10 +6,11 @@ import CTABanner      from '../components/sections/CTABanner'
 import Workforce      from '../components/sections/Workforce'
 import { COMPANY }    from '../utils/constants'
 import teamPhoto      from '../assets/images/gallery/g0.png'
+// import VideoSection from '../components/sections/VideoSection'
 
 const VALUES = [
   { title: 'AI-Powered Operations',  desc: 'A fully integrated AI system manages vehicle flow, guest wait times, and real-time parking data.' },
-  { title: 'Elite Uniformed Team',   desc: "Our 50 trained valet professionals wear premium, weather-appropriate uniforms reflecting Dubai's luxury standard." },
+  { title: 'Elite Uniformed Team',   desc: "Our trained valet professionals wear premium, weather-appropriate uniforms reflecting Dubai's luxury standard." },
   { title: 'Proven Excellence',      desc: 'A 99.9% incident-free record and consistently elevated guest satisfaction scores define our operational standard.' },
   { title: 'Continuous Development', desc: 'Ongoing coaching, performance reviews, and advanced training keep our team at the forefront of valet excellence.' },
 ]
@@ -79,6 +80,7 @@ export default function AboutPage() {
 
       {/* ── Stats ── */}
       <Stats />
+      {/* <VideoSection/> */}
 
       {/* ── Leadership ── */}
       <Leadership />

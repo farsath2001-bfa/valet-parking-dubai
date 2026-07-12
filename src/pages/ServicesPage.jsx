@@ -3,6 +3,7 @@ import SectionHeading from '../components/ui/SectionHeading'
 import CTABanner from '../components/sections/CTABanner'
 import Clients from '../components/sections/Clients'
 import { SERVICES, COMPANY } from '../utils/constants'
+import VideoSection from '../components/sections/VideoSection'
 
 export default function ServicesPage() {
   return (
@@ -81,6 +82,7 @@ export default function ServicesPage() {
 
       {/* ── Clients ── */}
       <Clients />
+      <VideoSection/>
 
       {/* ── Our Promise ── */}
       <section className="section section--darker promise">

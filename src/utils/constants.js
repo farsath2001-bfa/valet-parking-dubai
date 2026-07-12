@@ -55,26 +55,20 @@ export const SERVICES = [
     description:
       "Real-time AI dispatch assigns drivers instantly, minimizing vehicle retrieval times and maximizing operational efficiency across all zones.",
   },
+  
   {
     id: 6,
-    icon: "ShieldCheck",
-    title: "Incident-Free Standards",
-    description:
-      "Maintaining a 99.9% incident-free record with a 25% reduction in vehicle damage incidents through strict safety protocols and continuous staff training.",
-  },
-  {
-    id: 7,
     icon: "Building2",
     title: "Hotel & Corporate Valet",
     description:
       "Seamless luxury valet experiences for hotels, events, and premium venues — delivered through precision, professionalism, and AI-powered operational excellence.",
   },
   {
-  id: 8,
+  id: 7,
   icon: "Shirt",
   title: "Uniformed Professionals",
   description:
-    "Our 50-strong team wears premium uniforms tailored for comfort in all weather conditions, projecting a polished and trustworthy brand image.",
+    "Our strong team wears premium uniforms tailored for comfort in all weather conditions, projecting a polished and trustworthy brand image.",
 },
 ];
 
@@ -87,11 +81,11 @@ export const WHY_US = [
       "A fully integrated AI system manages vehicle flow, guest wait times, and real-time parking data — reducing wait times by 15% and cutting operational costs by 10%.",
   },
   {
-    icon: "Users",
-    title: "Elite Uniformed Team",
-    description:
-      "Our 50 trained valet professionals wear premium, weather-appropriate uniforms, ensuring guest-facing presentation matches the luxury environments we serve.",
-  },
+  icon: "Users",
+  title: "Elite Uniformed Team",
+  description:
+    "Our trained valet professionals wear premium, weather-appropriate uniforms, ensuring guest-facing presentation matches the luxury environments we serve.",
+},
   {
     icon: "Award",
     title: "Proven Excellence",
@@ -105,11 +99,11 @@ export const WHY_US = [
       "Real-time AI monitoring of every vehicle from arrival to retrieval, eliminating errors and ensuring complete accountability at every touchpoint.",
   },
   {
-    icon: "GraduationCap",
-    title: "Elite Trained Team",
-    description:
-      "Our 50 uniformed valet professionals are rigorously trained in VIP guest handling, safety compliance, and luxury service standards across all weather conditions.",
-  },
+  icon: "GraduationCap",
+  title: "Elite Trained Team",
+  description:
+    "Our uniformed valet professionals are rigorously trained in VIP guest handling, safety compliance, and luxury service standards across all weather conditions.",
+},
   {
     icon: "TrendingDown",
     title: "Budget & Cost Efficiency",
@@ -157,11 +151,11 @@ export const WORKFORCE = {
     "A disciplined, presentation-ready team delivering consistent luxury valet experiences — powered by rigorous training and AI-assisted operations.",
   cards: [
     {
-      icon: "BadgeCheck",
-      title: "Certified Professionals",
-      description:
-        "All 50+ drivers and attendants hold verified certifications in luxury vehicle handling, guest relations, and operational safety compliance.",
-    },
+  icon: "BadgeCheck",
+  title: "Certified Professionals",
+  description:
+    "All drivers and attendants hold verified certifications in luxury vehicle handling, guest relations, and operational safety compliance.",
+},
     {
       icon: "Shirt",
       title: "Weather-Ready Uniforms",
@@ -187,10 +181,10 @@ export const WORKFORCE = {
   },
   stats: [
     {
-      title: "50+ Trained Professionals",
-      description:
-        "Our team of over 50 dedicated valet professionals is rigorously selected, trained, and certified to deliver seamless luxury service across all environments and peak-demand scenarios.",
-    },
+  title: "Trained Professionals",
+  description:
+    "Our team of dedicated valet professionals is rigorously selected, trained, and certified to deliver seamless luxury service across all environments and peak-demand scenarios.",
+},
     {
       title: "Uniform & Presentation Standards",
       description:
@@ -206,10 +200,10 @@ export const WORKFORCE = {
 
 // ─── Stats ────────────────────────────────────────────────────
 export const STATS = [
-  { value: 50, suffix: "+", label: "Trained Professionals" },
   { value: 99, suffix: ".9%", label: "Incident-Free Record" },
   { value: 15, suffix: "%", label: "Faster Wait Times" },
   { value: 25, suffix: "%", label: "Fewer Damage Incidents" },
+  { value: 10, suffix: "%", label: "Lower Operational Costs" },
 ];
 
 // ─── Testimonials ─────────────────────────────────────────────
@@ -373,10 +367,10 @@ export const LEADERSHIP = {
         "Managed annual budgets exceeding $500,000, achieving a 5% reduction in operational expenses and 10% reduction in overtime costs.",
     },
     {
-      title: "Safety & Compliance",
-      description:
-        "Maintained a 99.9% incident-free operational record while leading teams of 50+ staff across luxury hotel and large-scale valet environments.",
-    },
+  title: "Safety & Compliance",
+  description:
+    "Maintained a 99.9% incident-free operational record while leading teams across luxury hotel and large-scale valet environments.",
+},
   ],
 };
 
@@ -391,8 +385,8 @@ export const COMPANY = {
     "To be the most trusted and technologically advanced valet parking company in the region, setting the gold standard for guest experience, operational efficiency, and service excellence.",
   identity:
     "Solo Heights Valet Parking is a premier luxury valet brand operating under Solo Heights Group, delivering world-class parking experiences for elite venues, hotels, and corporate clients.",
-  people:
-    "Our team of 50 dedicated, uniformed professionals is trained to the highest hospitality standards, wearing smart, weather-appropriate uniforms that reflect our brand's elegance and care for staff comfort.",
+  people: 
+    "Our team of dedicated, uniformed professionals is trained to the highest hospitality standards, wearing smart, weather-appropriate uniforms that reflect our brand's elegance and care for staff comfort.", 
   commitment:
     "We uphold a 99.9% incident-free record and maintain strict safety compliance protocols, ensuring every vehicle and guest interaction is handled with precision and respect.",
 };

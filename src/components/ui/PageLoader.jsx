@@ -1,16 +1,11 @@
 import { useEffect, useState } from 'react'
-import { useLocation } from 'react-router-dom'
 import logo from '../../assets/logo.png'
 
 export default function PageLoader() {
   const [loading, setLoading] = useState(true)
   const [fadeOut, setFadeOut] = useState(false)
-  const location = useLocation()
 
   useEffect(() => {
-    setLoading(true)
-    setFadeOut(false)
-
     const fadeTimer = setTimeout(() => {
       setFadeOut(true)
     }, 1200)
@@ -23,7 +18,7 @@ export default function PageLoader() {
       clearTimeout(fadeTimer)
       clearTimeout(hideTimer)
     }
-  }, [location])
+  }, []) // ← empty array = only runs ONCE on first load
 
   if (!loading) return null
 
@@ -68,7 +63,6 @@ export default function PageLoader() {
           pointer-events: none;
         }
 
-        /* ── Logo ── */
         .page-loader__logo {
           animation: loaderPulse 1.2s ease-in-out infinite;
         }
@@ -85,7 +79,6 @@ export default function PageLoader() {
           50%       { transform: scale(1.08); opacity: 1;   }
         }
 
-        /* ── Brand ── */
         .page-loader__brand {
           display: flex;
           flex-direction: column;
@@ -109,7 +102,6 @@ export default function PageLoader() {
           color: var(--color-gold);
         }
 
-        /* ── Progress Bar ── */
         .page-loader__bar-wrap {
           width: 180px;
           height: 2px;
@@ -132,7 +124,6 @@ export default function PageLoader() {
           100% { width: 100%; }
         }
 
-        /* ── Tagline ── */
         .page-loader__tagline {
           font-family: var(--font-display);
           font-size: var(--fs-sm);

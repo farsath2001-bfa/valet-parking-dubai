@@ -1,5 +1,6 @@
 import SectionHeading from '../components/ui/SectionHeading'
 import CTABanner from '../components/sections/CTABanner'
+import Seo from '../components/ui/Seo'
 
 
 import g1  from '../assets/images/gallery/g1.png'
@@ -33,6 +34,84 @@ export default function GalleryPage() {
 </p>
         </div>
       </section>
+
+      {/* ── Featured Video ── */}
+<section className="section section--darker">
+  <div className="container">
+    <div className="gallery-video__heading">
+      <span className="eyebrow">Our Team in Action</span>
+      <div className="gold-line gold-line--center" />
+      <h2 className="gallery-video__title">
+        Excellence in
+        <span className="text-gold"> Every Drive</span>
+      </h2>
+      <p className="gallery-video__subtitle">
+        Watch Solo Heights Valet Parking's professional team deliver
+        world-class valet service across Dubai's finest venues.
+      </p>
+    </div>
+
+    <div className="gallery-video__wrap">
+      <div className="gallery-video__frame">
+        <iframe
+          src="https://www.youtube.com/embed/9mgZ2RnSe-E?si=UZDE7pdp1uNyWJpc"
+          title="Solo Heights Valet Parking — Team in Action"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        />
+      </div>
+    </div>
+  </div>
+
+  <style>{`
+    .gallery-video__heading {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .gallery-video__title {
+      font-family: var(--font-display);
+      font-size: var(--fs-3xl);
+      font-weight: 700;
+      color: var(--color-white);
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    .gallery-video__subtitle {
+      font-size: var(--fs-md);
+      color: var(--color-gray-light);
+      line-height: 1.8;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .gallery-video__wrap {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .gallery-video__frame {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--color-border);
+      box-shadow: 0 20px 60px rgba(200, 168, 101, 0.15);
+    }
+
+    .gallery-video__frame iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  `}</style>
+</section>
      
 
       {/* ── Gallery Grid ── */}

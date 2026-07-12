@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { Phone, Mail, MapPin } from 'lucide-react'
 import { SERVICES, CONTACT_INFO, FOOTER_LINKS } from '../../utils/constants'
 import logo from '../../assets/logo.png'
+import qrCode from '../../assets/qr.png'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -52,6 +53,14 @@ export default function Footer() {
                 </svg>
               </a>
             </div>
+          
+
+          {/* ── QR Code ── */}
+          <div className="footer__qr">
+           <img src={qrCode} alt="Scan to watch Solo Heights Valet System" className="footer__qr-img" />
+          <span className="footer__qr-label"></span>
+          </div>
+          <span></span>
           </div>
 
           {/* ── Quick Links ── */}
@@ -177,6 +186,26 @@ export default function Footer() {
           gap: 0.75rem;
           margin-bottom: 1.25rem;
         }
+
+        .footer__qr {
+          margin-top: 1.75rem;
+          padding-top: 1.25rem;
+          border-top: 1px solid var(--color-border);
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+
+        .footer__qr-img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  border: 1px solid var(--color-gold);
+  border-radius: var(--radius-sm);
+  padding: 8px;
+  background: #ffffff;
+  display: block;
+}
 
         .footer__logo-img {
           width: 70px;
