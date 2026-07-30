@@ -270,8 +270,8 @@ export const FAQS = [
 
 // ─── Contact Info ─────────────────────────────────────────────
 export const CONTACT_INFO = {
-  phone: "+971 56 836 7272",
-  whatsapp: "971568367272",
+  phone: "+971 56 836 9999",
+  whatsapp: "971568369999",
   email: "info@soloheights-valet.ae",
   address: "Business Bay, Al Manara Tower, 3207, Dubai, UAE",
 };

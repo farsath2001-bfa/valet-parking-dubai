@@ -133,7 +133,7 @@ export default function EventsPage() {
           </div>
           <div className="events__book-ctas">
             
-              <a href="https://wa.me/971568367272"
+              <a href="https://wa.me/971568369999"
               target="_blank"
               rel="noreferrer"
               className="btn btn--primary"
@@ -142,7 +142,7 @@ export default function EventsPage() {
               Get Event Quote
             </a>
             
-             <a href="tel:+971568367272"
+             <a href="tel:+971568369999"
               className="btn btn--outline"
             >
               Call Us Now
