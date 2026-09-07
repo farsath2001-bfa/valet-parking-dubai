@@ -150,7 +150,7 @@ function App() {
 
         {/* ── Footer ── */}
         <p className="coming-soon__copy">
-          © {new Date().getFullYear()} Solo Heights Valet Parking. All rights reserved.
+          © {new Date().getFullYear()} Design & Develop by Farsath .Solo Heights Valet Parking. All rights reserved.
         </p>
 
       </div>
